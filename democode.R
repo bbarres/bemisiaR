@@ -8,7 +8,7 @@
 library(drc)
 
 #load the global dataset
-datatest<-read.table("test_data.txt",header=T,sep="\t")
+datatest<-read.table("data/test_data.txt",header=T,sep="\t")
 summary(datatest)
 head(datatest,n=15)
 

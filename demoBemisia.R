@@ -1,7 +1,7 @@
 library(drc)
 
 #importing data and filtering the P13 population
-demodata<-read.table("DataCourbesDR-2018.txt",header=TRUE,sep="\t")
+demodata<-read.table("data/DataCourbesDR-2018.txt",header=TRUE,sep="\t")
 P13aceta<-demodata[demodata$Population=="P13" & demodata$Produit=="supreme",]
 P13aceta$total<-P13aceta$Eff.vivants+P13aceta$Eff.morts
 
