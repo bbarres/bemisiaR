@@ -1,16 +1,13 @@
-############################
-## FITNESS RELATED TRAITS ##
-############################
+###############################################################################
+###############################################################################
+#Fitness related traits
+###############################################################################
 
 ## EGG TO ADULT ############
 
-# data
-larvae <- read.delim("traits-egg-larvae.txt", dec=",")
-larvae$fitness <- larvae$euf.tot*larvae$X.emergence
+#building the 'fitness' variable
+larvae$fitness<-larvae$euf.tot*larvae$X.emergence
 
-# package
-install.packages("multcomp")
-library(multcomp)
 
 ## models with DL50 effect
 mod1 <- glm(X.eclosion~DLpop, family=quasibinomial(link='logit'), weights=oeufs, data=larvae)

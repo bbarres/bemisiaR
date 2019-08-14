@@ -24,15 +24,12 @@ library(multcomp)
 
 
 
-
-
-
 ###############################################################################
 #loading the data for the fitness analyses
 ###############################################################################
 
-
-
+#loading the egg to larvae dataset
+larvae<-read.table("data/traits-egg-larvae.txt",header=TRUE,sep="\t")
 
 
 
