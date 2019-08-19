@@ -1,23 +1,11 @@
-######################################################################
-## DOSE RESPONSE CURVES, LC50 AND RR50
-######################################################################
+###############################################################################
+###############################################################################
+#Dose response curve analyses
+###############################################################################
+###############################################################################
 
-# package
-library(drc)
+source("load_bemisia_data.R")
 
-# data importation
-gamme <- read.delim("insecticides-mortality.txt",dec=",")
-
-# mortalities
-gamme$Total <- gamme$Eff.morts + gamme$Eff.vivants
-
-mortalites <- aggregate(gamme[,c("Eff.morts","Total")],list(Population=gamme$Population,Produit=gamme$Produit,Concentration=gamme$Concentration),sum)
-
-mortalites$Morta.Pool <- mortalites$Eff.morts/mortalites$Total
-
-summary(gamme)
-
-summary(mortalites)
 
 ######################################################################
 ## MODELS AND CURVES : IO SPECIES / SUPREME 20 SG
@@ -25,7 +13,8 @@ summary(mortalites)
 
 SmodIO<-drm(Eff.morts/Total~Concentration,
             weights=Total,
-            data=gamme[which(gamme$Produit=="supreme"& gamme$Population=="IO" ),],fct=LN.3u(),
+            data=gamme[which(gamme$Produit=="supreme"& gamme$Population=="IO" ),],
+            fct=LN.3u(),
             type="binomial")
 summary(SmodIO)
 # b = relative slope arround LC50
@@ -71,6 +60,7 @@ S.RR.60IO
 S.RR.35 <- S.LC50.35/S.LC50.IO
 
 S.RR.35
+
 
 ######################################################################
 ## MODELS : IO SPECIES / PLENUM 50 WG
@@ -145,3 +135,10 @@ SmodB1e<-drm(Eff.morts/Total~Concentration,Environment,
 summary(SmodB1e)
 
 compParm(SmodB1e,"e")
+
+
+
+
+###############################################################################
+#END
+###############################################################################
