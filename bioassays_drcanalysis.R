@@ -68,16 +68,17 @@ for (j in 1:length(SAlist)) {
 }
 
 (table(gamme$population_ID,gamme$pesticide))
+plot(as.numeric(as.character(CompRez[CompRez$parameter=="LC50","estimate"])),
+     log="y")
 
 #exporting the result as a text file
-write.table(CompRez, file="output/results_cerco.txt",
+write.table(CompRez, file="output/results_bemisia.txt",
             sep="\t",quote=FALSE,row.names=FALSE)
 
 
-
-######################################################################
+###############################################################################
 ## MODELS AND CURVES : IO SPECIES / SUPREME 20 SG
-######################################################################
+###############################################################################
 
 SmodIO<-drm(dead/total~concentration,
             weights=total,
@@ -91,19 +92,22 @@ summary(SmodIO)
 
 Smod64IO<-drm(Eff.morts/Total~Concentration,
               weights=Total,
-              data=gamme[which(gamme$Produit=="supreme"& gamme$Population=="P64IO" ),],fct=LN.3u(),
+              data=gamme[which(gamme$Produit=="supreme"& gamme$Population=="P64IO" ),],
+              fct=LN.3u(),
               type="binomial")
 summary(Smod64IO)
 
 Smod60IO<-drm(Eff.morts/Total~Concentration,
               weights=Total,
-              data=gamme[which(gamme$Produit=="supreme"& gamme$Population=="P60IO" ),],fct=LN.3u(),
+              data=gamme[which(gamme$Produit=="supreme"& gamme$Population=="P60IO" ),],
+              fct=LN.3u(),
               type="binomial")
 summary(Smod60IO)
 
 Smod35<-drm(Eff.morts/Total~Concentration,
             weights=Total,
-            data=gamme[which(gamme$Produit=="supreme"& gamme$Population=="P35" ),],fct=LN.3u(),
+            data=gamme[which(gamme$Produit=="supreme"& gamme$Population=="P35" ),],
+            fct=LN.3u(),
             type="binomial")
 summary(Smod35)
 
@@ -130,9 +134,9 @@ S.RR.35 <- S.LC50.35/S.LC50.IO
 S.RR.35
 
 
-######################################################################
+###############################################################################
 ## MODELS : IO SPECIES / PLENUM 50 WG
-######################################################################
+###############################################################################
 
 PmodIO<-drm(Eff.morts/Total~Concentration,
             weights=Total,
@@ -159,9 +163,10 @@ P.RR.64IO <- P.LC50.64IO/P.LC50.IO
 P.RR.64IO
 
 
-#############################################################################################################
-## PAIRWISE COMPARISONS OF LC50 TO ACETAMIPRID BETWEEN GROUPS OF MEAM1 POP COLLECTED IN THE SAME ENVIRONMENT
-#############################################################################################################
+###############################################################################
+## PAIRWISE COMPARISONS OF LC50 TO ACETAMIPRID BETWEEN GROUPS OF 
+#MEAM1 POP COLLECTED IN THE SAME ENVIRONMENT
+###############################################################################
 
 # data
 
