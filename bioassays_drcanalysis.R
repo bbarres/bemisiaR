@@ -7,13 +7,80 @@
 source("load_bemisia_data.R")
 
 
+###############################################################################
+#Dose response curve analyses
+###############################################################################
+
+#first we extract the list of the different SA listed in the file
+SAlist<-levels(gamme$pesticide)
+CompRez<-data.frame(pesticide=factor(),population_ID=factor(),
+                    species=character(),parameter=character(),
+                    estimate=numeric(),SD=numeric(),
+                    t_value=numeric(),p_value=numeric())
+#we make a subselection of the data according to the SA
+for (j in 1:length(SAlist)) {
+  data_subSA<-gamme[gamme$pesticide==SAlist[j],]
+  data_subSA$population_ID<-drop.levels(data_subSA$population_ID)
+  POPlist<-levels(data_subSA$population_ID)
+  REZSA<-data.frame(pesticide=factor(),population_ID=factor(),
+                    species=character(),parameter=character(),
+                    estimate=numeric(),SD=numeric(),
+                    t_value=numeric(),p_value=numeric())
+  #computation for each populations
+    for (i in 1:length(POPlist)) {
+      data.temp<-data_subSA[data_subSA$population_ID==POPlist[i],]
+      temp.m1<-drm(dead/total~concentration,
+                   weights=total,
+                   data=data.temp,
+                   fct=LN.3u(),
+                   type="binomial")
+      plot(temp.m1,main=paste(SAlist[j],POPlist[i]),
+           ylim=c(0,1.1),xlim=c(0,max(data_subSA$concentration)))
+      tryCatch({tempx<-rbind(c("pesticide"=SAlist[j],
+                               "population_ID"=POPlist[i],
+                               "species"=as.character(data.temp$species[1]),
+                               "parameter"="slope",
+                               "estimate"=summary(temp.m1)$coefficients[1,1],
+                               "SD"=summary(temp.m1)$coefficients[1,2],
+                               "t_value"=summary(temp.m1)$coefficients[1,3],
+                               "p_value"=summary(temp.m1)$coefficients[1,4]),
+                             c("pesticide"=SAlist[j],
+                               "population_ID"=POPlist[i],
+                               "species"=as.character(data.temp$species[1]),
+                               "parameter"="lower",
+                               "estimate"=summary(temp.m1)$coefficients[2,1],
+                               "SD"=summary(temp.m1)$coefficients[2,2],
+                               "t_value"=summary(temp.m1)$coefficients[2,3],
+                               "p_value"=summary(temp.m1)$coefficients[2,4]),
+                             c("pesticide"=SAlist[j],
+                               "population_ID"=POPlist[i],
+                               "species"=as.character(data.temp$species[1]),
+                               "parameter"="LC50",
+                               "estimate"=summary(temp.m1)$coefficients[3,1],
+                               "SD"=summary(temp.m1)$coefficients[3,2],
+                               "t_value"=summary(temp.m1)$coefficients[3,3],
+                               "p_value"=summary(temp.m1)$coefficients[3,4]))
+      REZSA<-rbind(REZSA,tempx)
+      },error=function(e){cat("ERROR :",conditionMessage(e), "\n")})
+    }
+  CompRez<-rbind(CompRez,REZSA)
+}
+
+(table(gamme$population_ID,gamme$pesticide))
+
+#exporting the result as a text file
+write.table(CompRez, file="output/results_cerco.txt",
+            sep="\t",quote=FALSE,row.names=FALSE)
+
+
+
 ######################################################################
 ## MODELS AND CURVES : IO SPECIES / SUPREME 20 SG
 ######################################################################
 
-SmodIO<-drm(Eff.morts/Total~Concentration,
-            weights=Total,
-            data=gamme[which(gamme$Produit=="supreme"& gamme$Population=="IO" ),],
+SmodIO<-drm(dead/total~concentration,
+            weights=total,
+            data=gamme[which(gamme$pesticide=="supreme"& gamme$population_ID=="IO" ),],
             fct=LN.3u(),
             type="binomial")
 summary(SmodIO)
@@ -68,13 +135,15 @@ S.RR.35
 
 PmodIO<-drm(Eff.morts/Total~Concentration,
             weights=Total,
-            data=gamme[which(gamme$Produit=="plenum"& gamme$Population=="IO" ),],fct=LN.3u(),
+            data=gamme[which(gamme$Produit=="plenum"& gamme$Population=="IO" ),],
+            fct=LN.3u(),
             type="binomial")
 summary(PmodIO)
 
 Pmod64IO<-drm(Eff.morts/Total~Concentration,
               weights=Total,
-              data=gamme[which(gamme$Produit=="plenum"& gamme$Population=="P64IO" ),],fct=LN.3u(),
+              data=gamme[which(gamme$Produit=="plenum"& gamme$Population=="P64IO" ),],
+              fct=LN.3u(),
               type="binomial")
 summary(Pmod64IO)
 
@@ -105,7 +174,8 @@ gamme <- merge(environ, gamme)
 
 SmodB0<-drm(Eff.morts/Total~Concentration,Environment,
             weights=Total,
-            data=gamme[which(gamme$Produit=="supreme"& gamme$Species=="MEAM1"),],fct=LN.3u(),
+            data=gamme[which(gamme$Produit=="supreme"& gamme$Species=="MEAM1"),],
+            fct=LN.3u(),
             type="binomial")
 
 summary(SmodB0)
@@ -114,7 +184,8 @@ summary(SmodB0)
 
 SmodB1e<-drm(Eff.morts/Total~Concentration,Environment,
              weights=Total,
-             data=gamme[which(gamme$Produit=="supreme"& gamme$Species=="MEAM1"),],fct=LN.3u(),
+             data=gamme[which(gamme$Produit=="supreme"& gamme$Species=="MEAM1"),],
+             fct=LN.3u(),
              type="binomial",
              pmodels=list(~Population-1, ~Population-1, ~1))
 
@@ -128,7 +199,8 @@ anova(SmodB1e,SmodB0)
 
 SmodB1e<-drm(Eff.morts/Total~Concentration,Environment,
              weights=Total,
-             data=gamme[which(gamme$Produit=="supreme"& gamme$Species=="MEAM1"),],fct=LN.3u(),
+             data=gamme[which(gamme$Produit=="supreme"& gamme$Species=="MEAM1"),],
+             fct=LN.3u(),
              type="binomial",
              pmodels=list(~1, ~1, ~Environment-1))
 

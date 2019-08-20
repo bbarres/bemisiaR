@@ -6,6 +6,7 @@
 
 #libraries necessary for the different analyses
 library(drc)
+library(gdata)
 library(multcomp)
 
 
@@ -15,21 +16,16 @@ library(multcomp)
 
 #loading the raw data of the gamme dose response
 gamme<-read.delim("data/insecticides-mortality.txt",header=TRUE,sep="\t")
-#adding a column for the total number of tested individual per modality
-gamme$Total<-gamme$Eff.morts + gamme$Eff.vivants
 summary(gamme)
 
 #creating a new dataset by combining the number of the different repetition
-mortalites<-aggregate(gamme[,c("Eff.morts","Total")],
-                      list(Population=gamme$Population,
-                           Produit=gamme$Produit,
-                           Concentration=gamme$Concentration),sum)
+mortalites<-aggregate(gamme[,c("dead","total")],
+                      list(population_ID=gamme$population_ID,
+                           pesticide=gamme$pesticide,
+                           concentration=gamme$concentration),sum)
 #adding a column for mortality rate
-mortalites$Morta.Pool<-mortalites$Eff.morts/mortalites$Total
+mortalites$Morta.Pool<-mortalites$dead/mortalites$total
 summary(mortalites)
-
-#loading the environment 
-environ<-read.table("data/environment.txt",header=TRUE,sep="\t")
 
 
 ###############################################################################
