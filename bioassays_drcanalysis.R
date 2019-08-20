@@ -34,7 +34,8 @@ for (j in 1:length(SAlist)) {
                    data=data.temp,
                    fct=LN.3u(),
                    type="binomial")
-      plot(temp.m1,main=paste(SAlist[j],POPlist[i]),
+      plot(temp.m1,main=paste(SAlist[j],POPlist[i],data.temp$species[1]),
+           col.main=data.temp$species[1],
            ylim=c(0,1.1),xlim=c(0,max(data_subSA$concentration)))
       tryCatch({tempx<-rbind(c("pesticide"=SAlist[j],
                                "population_ID"=POPlist[i],
