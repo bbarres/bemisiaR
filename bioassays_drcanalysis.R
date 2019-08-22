@@ -69,7 +69,11 @@ for (j in 1:length(SAlist)) {
 
 (table(gamme$population_ID,gamme$pesticide))
 plot(as.numeric(as.character(CompRez[CompRez$parameter=="LC50","estimate"])),
-     log="y")
+     log="y",las=1,ylab="LC50 estimate")
+
+
+
+
 
 #exporting the result as a text file
 write.table(CompRez, file="output/results_bemisia.txt",
