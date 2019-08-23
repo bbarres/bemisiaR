@@ -16,15 +16,18 @@ library(multcomp)
 
 #loading the raw data of the gamme dose response
 gamme<-read.delim("data/insecticides-mortality.txt",header=TRUE,sep="\t")
+#adding a death percentage column to the dataset
+gamme$percdeath<-gamme$dead/gamme$total
 summary(gamme)
 
 #creating a new dataset by combining the number of the different repetition
 mortalites<-aggregate(gamme[,c("dead","total")],
                       list(population_ID=gamme$population_ID,
                            pesticide=gamme$pesticide,
-                           concentration=gamme$concentration),sum)
-#adding a column for mortality rate
-mortalites$Morta.Pool<-mortalites$dead/mortalites$total
+                           dose=gamme$dose,species=gamme$species),
+                      sum)
+#adding a column for cumulated mortality rate for every repetition
+mortalites$percdeath<-mortalites$dead/mortalites$total
 summary(mortalites)
 
 

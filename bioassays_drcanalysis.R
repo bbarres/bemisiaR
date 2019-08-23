@@ -21,22 +21,43 @@ CompRez<-data.frame(pesticide=factor(),population_ID=factor(),
 for (j in 1:length(SAlist)) {
   data_subSA<-gamme[gamme$pesticide==SAlist[j],]
   data_subSA$population_ID<-drop.levels(data_subSA$population_ID)
+  #some population never reach a "global" mortality rate of 50%, even at 
+  #the highest tested dose. We assigne a LC50 superior to the maximum dose
+  #tested to these populations
+  OBP<-mortalites[mortalites$dose==max(data_subSA$dose) &
+                    mortalites$pesticide==SAlist[j] & 
+                    mortalites$percdeath<0.500001,
+                  c("population_ID","species")]
+  ifelse(length(OBP$population_ID)==0,
+         REZSA<-data.frame(pesticide=factor(),population_ID=factor(),
+                           species=character(),parameter=character(),
+                           estimate=numeric(),SD=numeric(),
+                           t_value=numeric(),p_value=numeric()),
+         REZSA<-data.frame(pesticide=SAlist[j],
+                           population_ID=as.character(OBP$population_ID),
+                           species=as.character(OBP$species),
+                           parameter=c("LC50"),
+                           estimate=paste(">",max(data_subSA$dose),
+                                          sep=""),
+                           SD=NA,t_value=NA,p_value=NA)
+  )
+  
+  #we limit the dataset to the population that reach somehow a IC of 50%
   POPlist<-levels(data_subSA$population_ID)
-  REZSA<-data.frame(pesticide=factor(),population_ID=factor(),
-                    species=character(),parameter=character(),
-                    estimate=numeric(),SD=numeric(),
-                    t_value=numeric(),p_value=numeric())
-  #computation for each populations
+  POPlist<-POPlist[!(POPlist %in% as.character((OBP$population_ID)))]
+  
+  if(length(POPlist)!=0) {
+    #computation for each populations
     for (i in 1:length(POPlist)) {
       data.temp<-data_subSA[data_subSA$population_ID==POPlist[i],]
-      temp.m1<-drm(dead/total~concentration,
+      temp.m1<-drm(dead/total~dose,
                    weights=total,
                    data=data.temp,
                    fct=LN.3u(),
                    type="binomial")
       plot(temp.m1,main=paste(SAlist[j],POPlist[i],data.temp$species[1]),
-           col.main=data.temp$species[1],
-           ylim=c(0,1.1),xlim=c(0,max(data_subSA$concentration)))
+           col.main=data.temp$species[1],type="all",
+           ylim=c(0,1.1),xlim=c(0,max(data_subSA$dose)))
       tryCatch({tempx<-rbind(c("pesticide"=SAlist[j],
                                "population_ID"=POPlist[i],
                                "species"=as.character(data.temp$species[1]),
@@ -63,15 +84,17 @@ for (j in 1:length(SAlist)) {
                                "p_value"=summary(temp.m1)$coefficients[3,4]))
       REZSA<-rbind(REZSA,tempx)
       },error=function(e){cat("ERROR :",conditionMessage(e), "\n")})
+    }} else {
+      REZSA<-REZSA
     }
   CompRez<-rbind(CompRez,REZSA)
 }
 
 (table(gamme$population_ID,gamme$pesticide))
 plot(as.numeric(as.character(CompRez[CompRez$parameter=="LC50","estimate"])),
-     log="y",las=1,ylab="LC50 estimate")
+     log="y",las=1,ylab="LC50 estimate (mg/L")
 
-
+#toujours problème avec pop 18 en plenum
 
 
 
