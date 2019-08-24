@@ -14,7 +14,7 @@ Some of the R code used for Alizée's analysis on bemisia resistance tests
 The datasets used in the study can be found in the "dataset" folder. 
 
 The first dataset contains the results of the dose-response experiments. Each line depict the results for one population of one species at one concentration of one pesticide. 
-+insecticides-mortality.txt
++ insecticides-mortality.txt
   + *population_ID*: population ID
   + *species*: the Bemisia tabaci species name (either IO or MEAM1)
   + *environment_type*: the type of environment the population was sampled from
