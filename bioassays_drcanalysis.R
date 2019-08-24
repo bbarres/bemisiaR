@@ -5,6 +5,7 @@
 ###############################################################################
 
 source("load_bemisia_data.R")
+table(gamme$population_ID,gamme$pesticide,gamme$species)
 
 
 ###############################################################################
@@ -90,9 +91,19 @@ for (j in 1:length(SAlist)) {
   CompRez<-rbind(CompRez,REZSA)
 }
 
-(table(gamme$population_ID,gamme$pesticide))
+
+temp<-CompRez[CompRez$parameter=="LC50",c(1:5)]
+temp$estimate<-as.numeric(as.character(temp$estimate))
+#we assign a high value for the population 
+temp[is.na(temp$estimate),]$estimate<-50000
+temp<-temp[order(as.character(temp$pesticide),
+                 temp$estimate),]
+plot(temp$estimate,log="y",las=1,ylab="LC50 estimate (mg/L)",
+     col=temp$species,pch=19,cex=2)
+
+temp<-temp[order(CompRez$species,CompRez$pesticide,CompRez$population_ID),]
 plot(as.numeric(as.character(CompRez[CompRez$parameter=="LC50","estimate"])),
-     log="y",las=1,ylab="LC50 estimate (mg/L")
+     log="y",las=1,ylab="LC50 estimate (mg/L)")
 
 #toujours problème avec pop 18 en plenum
 
