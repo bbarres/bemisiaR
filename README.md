@@ -40,4 +40,9 @@ The second dataset contains the results of the fitness experiments
 
 
 ## Citation
+You can cite the related study as follow : 
++ Taquet A., Delatte H., Barrès B., Simiand C., Grondin M. and Jourdan H. Insecticide resistance and fitness cost in *Bemisia tabaci* (Hemiptera: Aleyrodidae) invasive and resident species in La Réunion Island. *submitted*. [[link]](https://onlinelibrary.wiley.com/doi/abs/10.1002/ps.5461)
+
+If you want to use (some of) the code found on this page or if you want to cite this repository : 
++ Alizée Taquet, Hélène Jourdan and Benoit Barrès. bbarres/bemisiaR: [Supporting data and code for: Insecticide resistance and fitness cost in *Bemisia tabaci* (Hemiptera: Aleyrodidae) invasive and resident species in La Réunion Island. Zenodo; 2019.](https://zenodo.org/badge/latestdoi/133033505)
 
