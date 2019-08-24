@@ -2,7 +2,7 @@
 
 # Supporting data and code for: Insecticide resistance and fitness cost in *Bemisia tabaci* (Hemiptera: Aleyrodidae) invasive and resident species in La Réunion Island
 
-Some of the R code used for Alizée's analysis on bemisia resistance tests
+The data and R code used for the related study. This study is a part of the phD thesis of Alizée Taquet.  
 
 ![alt_text](https://xuopmw.db.files.1drv.com/y4mmBsydCI6BUdvygvSlPIAmIrPLoghf_x33qWhWKiPlDOKpS-GyyH7aQWgXA0Dou0CgV5fvmV6OTWGJZOvmzMrX_wJCj9ceO__eJCVUoaQi3VyBS45TNtDpb_KI1uVgcardjHfRSi0DRWlZqjnZGXbCMg2BwSc9KgPTX1zW9MTiVrGWXj2fv40nsjKjrGuotKJQK1m7OvYXgYbDdjP_TggQQ?width=1584&height=588&cropmode=none)
 
@@ -40,9 +40,9 @@ The second dataset contains the results of the fitness experiments
 
 
 ## Citation
-You can cite the related study as follow : 
-+ Taquet A., Delatte H., Barrès B., Simiand C., Grondin M. and Jourdan H. Insecticide resistance and fitness cost in *Bemisia tabaci* (Hemiptera: Aleyrodidae) invasive and resident species in La Réunion Island. *submitted*. [[link]](https://onlinelibrary.wiley.com/doi/abs/10.1002/ps.5461)
+You will hopefully soon be able to cite the related study as follow: 
++ Taquet A., Delatte H., Barrès B., Simiand C., Grondin M. and Jourdan H. [Insecticide resistance and fitness cost in *Bemisia tabaci* (Hemiptera: Aleyrodidae) invasive and resident species in La Réunion Island. *submitted*.](to be completed)
 
-If you want to use (some of) the code found on this page or if you want to cite this repository : 
+If you want to use (some of) the code found on this page or if you want to cite this repository: 
 + Alizée Taquet, Hélène Jourdan and Benoit Barrès. bbarres/bemisiaR: [Supporting data and code for: Insecticide resistance and fitness cost in *Bemisia tabaci* (Hemiptera: Aleyrodidae) invasive and resident species in La Réunion Island. Zenodo; 2019.](https://zenodo.org/badge/latestdoi/133033505)
 
