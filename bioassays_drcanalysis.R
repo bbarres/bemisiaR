@@ -170,17 +170,6 @@ SmodB0<-drm(dead/total~dose,environment_type,
             type="binomial")
 summary(SmodB0)
 
-#effect of the population on LC50 (e)
-SmodB1e<-drm(dead/total~dose,environment_type,
-             weights=total,
-             data=gamme[which(gamme$pesticide=="supreme" & 
-                                gamme$species=="MEAM1"),],
-             fct=LN.3u(),
-             type="binomial",
-             pmodels=list(~population_ID-1, ~population_ID-1, ~1))
-summary(SmodB1e)
-anova(SmodB1e,SmodB0)
-
 #effect of the environment on LC50 (e)
 SmodB1env<-drm(dead/total~dose,environment_type,
                weights=total,
@@ -192,6 +181,17 @@ SmodB1env<-drm(dead/total~dose,environment_type,
 summary(SmodB1env)
 compParm(SmodB1e,"e")
 anova(SmodB1env,SmodB0)
+
+#effect of the population on LC50 (e)
+SmodB1e<-drm(dead/total~dose,environment_type,
+             weights=total,
+             data=gamme[which(gamme$pesticide=="supreme" & 
+                                gamme$species=="MEAM1"),],
+             fct=LN.3u(),
+             type="binomial",
+             pmodels=list(~population_ID-1, ~population_ID-1, ~1))
+summary(SmodB1e)
+anova(SmodB1e,SmodB0)
 
 
 ###############################################################################
