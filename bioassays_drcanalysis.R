@@ -5,6 +5,8 @@
 ###############################################################################
 
 source("load_bemisia_data.R")
+#checking the number of experiment for the different species, 
+#populations and pesticides. 
 table(gamme$population_ID,gamme$pesticide,gamme$species)
 
 
@@ -91,168 +93,105 @@ for (j in 1:length(SAlist)) {
   CompRez<-rbind(CompRez,REZSA)
 }
 
-
-temp<-CompRez[CompRez$parameter=="LC50",c(1:5)]
-temp$estimate<-as.numeric(as.character(temp$estimate))
-#we assign a high value for the population 
-temp[is.na(temp$estimate),]$estimate<-50000
-temp<-temp[order(as.character(temp$pesticide),
-                 temp$estimate),]
-plot(temp$estimate,log="y",las=1,ylab="LC50 estimate (mg/L)",
-     col=temp$species,pch=19,cex=2)
-
-temp<-temp[order(CompRez$species,CompRez$pesticide,CompRez$population_ID),]
-plot(as.numeric(as.character(CompRez[CompRez$parameter=="LC50","estimate"])),
-     log="y",las=1,ylab="LC50 estimate (mg/L)")
-
-#toujours problème avec pop 18 en plenum
-
-
+#CompRez include SD, t-value and p-value, so we build a simplified file
+sCompRez<-CompRez[CompRez$parameter=="LC50",c(1:5)]
+sCompRez$estimate<-as.numeric(as.character(sCompRez$estimate))
+#we assign a high value to the population for which LD50 estimation 
+#wasn't possible
+sCompRez[is.na(sCompRez$estimate),]$estimate<-50000
+sCompRez<-sCompRez[order(as.character(sCompRez$pesticide),
+                         sCompRez$estimate),]
+#adding a resistance ratio to the result table
+sCompRez$RR<-sCompRez$estimate
+sCompRez[sCompRez$species=="IO" & sCompRez$pesticide=="supreme",
+         "RR"]<-(sCompRez[sCompRez$species=="IO" & 
+                            sCompRez$pesticide=="supreme","RR"]/
+                 sCompRez[sCompRez$population_ID=="IO" & 
+                           sCompRez$pesticide=="supreme","RR"])
+sCompRez[sCompRez$species=="IO" & sCompRez$pesticide=="plenum",
+         "RR"]<-(sCompRez[sCompRez$species=="IO" & 
+                            sCompRez$pesticide=="plenum","RR"]/
+                   sCompRez[sCompRez$population_ID=="IO" & 
+                              sCompRez$pesticide=="plenum","RR"])
+sCompRez[sCompRez$species=="MEAM1" & sCompRez$pesticide=="supreme",
+         "RR"]<-(sCompRez[sCompRez$species=="MEAM1" & 
+                            sCompRez$pesticide=="supreme","RR"]/
+                   sCompRez[sCompRez$population_ID=="MEAM1" & 
+                              sCompRez$pesticide=="supreme","RR"])
+sCompRez[sCompRez$species=="MEAM1" & sCompRez$pesticide=="plenum",
+         "RR"]<-(sCompRez[sCompRez$species=="MEAM1" & 
+                            sCompRez$pesticide=="plenum","RR"]/
+                   sCompRez[sCompRez$population_ID=="MEAM1" & 
+                              sCompRez$pesticide=="plenum","RR"])
 
 #exporting the result as a text file
-write.table(CompRez, file="output/results_bemisia.txt",
+write.table(sCompRez, file="output/results_bemisia.txt",
             sep="\t",quote=FALSE,row.names=FALSE)
 
 
 ###############################################################################
-## MODELS AND CURVES : IO SPECIES / SUPREME 20 SG
+#Plotting the distribution of the results
 ###############################################################################
 
-SmodIO<-drm(dead/total~concentration,
+#a plot of the distribution of the LD50 of the different species
+plot(main="Estimated Lethal Dose 50 for the tested populations",
+     sCompRez$estimate,log="y",las=1,ylab="LC50 estimate (mg/L)",
+     col=sCompRez$species,pch=19,cex=2,cex.main=2,ylim=c(0.1,200000))
+abline(v=16.5,lty=2,lwd=4)
+legend("bottomright",c("MEAM1","IO"),pch=19,cex=2,col=c(1,2))
+text(8,200000,labels="Plenum",adj=0.5,cex=2)
+text(27.5,200000,labels="Supreme",adj=0.5,cex=2)
+#expot to pdf file 10 x 8 inches
+
+#a plot of the distribution of the RR of the different species
+plot(main="Estimated RR for the tested populations",
+     sCompRez$RR,log="y",las=1,ylab="RR estimate",
+     col=sCompRez$species,pch=19,cex=2,cex.main=2,ylim=c(0.1,200000))
+abline(v=16.5,lty=2,lwd=4)
+abline(h=1,lty=3,lwd=3)
+abline(h=10,lty=3,lwd=3,col="darkorange")
+abline(h=100,lty=3,lwd=3,col="red")
+legend("bottomright",c("MEAM1","IO"),pch=19,cex=2,col=c(1,2))
+text(8,200000,labels="Plenum",adj=0.5,cex=2)
+text(27.5,200000,labels="Supreme",adj=0.5,cex=2)
+#expot to pdf file 10 x 8 inches
+
+
+###############################################################################
+#Effect of the type of sampling environment on the LD50
+###############################################################################
+
+#fitting the "null hypothesis model"
+SmodB0<-drm(dead/total~dose,environment_type,
             weights=total,
-            data=gamme[which(gamme$pesticide=="supreme"& gamme$population_ID=="IO" ),],
+            data=gamme[which(gamme$pesticide=="supreme" & 
+                               gamme$species=="MEAM1"),],
             fct=LN.3u(),
             type="binomial")
-summary(SmodIO)
-# b = relative slope arround LC50
-# c = lower limit
-# e = LC50
-
-Smod64IO<-drm(Eff.morts/Total~Concentration,
-              weights=Total,
-              data=gamme[which(gamme$Produit=="supreme"& gamme$Population=="P64IO" ),],
-              fct=LN.3u(),
-              type="binomial")
-summary(Smod64IO)
-
-Smod60IO<-drm(Eff.morts/Total~Concentration,
-              weights=Total,
-              data=gamme[which(gamme$Produit=="supreme"& gamme$Population=="P60IO" ),],
-              fct=LN.3u(),
-              type="binomial")
-summary(Smod60IO)
-
-Smod35<-drm(Eff.morts/Total~Concentration,
-            weights=Total,
-            data=gamme[which(gamme$Produit=="supreme"& gamme$Population=="P35" ),],
-            fct=LN.3u(),
-            type="binomial")
-summary(Smod35)
-
-# LC50 and RR50
-
-S.LC50.IO <- ED(SmodIO,50,interval="delta",reference="control")
-
-S.LC50.64IO <- ED(Smod64IO,50,interval="delta",reference="control")
-
-S.LC50.60IO <- ED(Smod60IO,50,interval="delta",reference="control")
-
-S.LC50.35 <- ED(Smod35,50,interval="delta",reference="control")
-
-S.RR.64IO <- S.LC50.64IO/S.LC50.IO
-
-S.RR.64IO
-
-S.RR.60IO <- S.LC50.60IO/S.LC50.IO
-
-S.RR.60IO
-
-S.RR.35 <- S.LC50.35/S.LC50.IO
-
-S.RR.35
-
-
-###############################################################################
-## MODELS : IO SPECIES / PLENUM 50 WG
-###############################################################################
-
-PmodIO<-drm(Eff.morts/Total~Concentration,
-            weights=Total,
-            data=gamme[which(gamme$Produit=="plenum"& gamme$Population=="IO" ),],
-            fct=LN.3u(),
-            type="binomial")
-summary(PmodIO)
-
-Pmod64IO<-drm(Eff.morts/Total~Concentration,
-              weights=Total,
-              data=gamme[which(gamme$Produit=="plenum"& gamme$Population=="P64IO" ),],
-              fct=LN.3u(),
-              type="binomial")
-summary(Pmod64IO)
-
-# LC50 and RR50
-
-P.LC50.IO <- ED(PmodIO,50,interval="delta",reference="control")
-
-P.LC50.64IO <- ED(Pmod64IO,50,interval="delta",reference="control")
-
-P.RR.64IO <- P.LC50.64IO/P.LC50.IO
-
-P.RR.64IO
-
-
-###############################################################################
-## PAIRWISE COMPARISONS OF LC50 TO ACETAMIPRID BETWEEN GROUPS OF 
-#MEAM1 POP COLLECTED IN THE SAME ENVIRONMENT
-###############################################################################
-
-# data
-
-environ <- read.table ("environment.txt", h=T, sep="\t", dec = ",")
-
-summary(environ)
-
-gamme <- merge(environ, gamme)
-
-## fitting the three-parameter log-normal model with unequal LC50
-
-SmodB0<-drm(Eff.morts/Total~Concentration,Environment,
-            weights=Total,
-            data=gamme[which(gamme$Produit=="supreme"& gamme$Species=="MEAM1"),],
-            fct=LN.3u(),
-            type="binomial")
-
 summary(SmodB0)
 
-## testing for equality of LC50 (e)
-
-SmodB1e<-drm(Eff.morts/Total~Concentration,Environment,
-             weights=Total,
-             data=gamme[which(gamme$Produit=="supreme"& gamme$Species=="MEAM1"),],
+#effect of the population on LC50 (e)
+SmodB1e<-drm(dead/total~dose,environment_type,
+             weights=total,
+             data=gamme[which(gamme$pesticide=="supreme" & 
+                                gamme$species=="MEAM1"),],
              fct=LN.3u(),
              type="binomial",
-             pmodels=list(~Population-1, ~Population-1, ~1))
-
+             pmodels=list(~population_ID-1, ~population_ID-1, ~1))
 summary(SmodB1e)
-
 anova(SmodB1e,SmodB0)
 
-# p-value = 0 < 0.05
-
-# pairwise comparisons
-
-SmodB1e<-drm(Eff.morts/Total~Concentration,Environment,
-             weights=Total,
-             data=gamme[which(gamme$Produit=="supreme"& gamme$Species=="MEAM1"),],
-             fct=LN.3u(),
-             type="binomial",
-             pmodels=list(~1, ~1, ~Environment-1))
-
-summary(SmodB1e)
-
+#effect of the environment on LC50 (e)
+SmodB1env<-drm(dead/total~dose,environment_type,
+               weights=total,
+               data=gamme[which(gamme$pesticide=="supreme" & 
+                                  gamme$species=="MEAM1"),],
+               fct=LN.3u(),
+               type="binomial",
+               pmodels=list(~1, ~1, ~environment_type-1))
+summary(SmodB1env)
 compParm(SmodB1e,"e")
-
-
+anova(SmodB1env,SmodB0)
 
 
 ###############################################################################
