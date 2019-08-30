@@ -1,6 +1,6 @@
 ###############################################################################
 ###############################################################################
-#Fitness related traits
+#Analyses of fitness related traits
 ###############################################################################
 ###############################################################################
 
@@ -14,25 +14,27 @@ source("load_bemisia_data.R")
 #building the 'fitness' variable
 larvae$fitness<-larvae$euf.tot*larvae$X.emergence
 
-## models with DL50 effect
+####models with DL50 effect####
 mod1 <- glm(X.eclosion~DLpop, family=quasibinomial(link='logit'), 
             weights=oeufs, data=larvae)
 summary(mod1)
-# overdispersion = 5.5
+#overdispersion = 5.8
 anova(mod1, test="F")
 plot(larvae$X.eclosion~larvae$DLpop)
 
 mod2 <- glm(X.emergence~DLpop, family=quasibinomial(link='logit'), 
             weights=oeufs, data=larvae)
 summary(mod2)
-# overdispersion = 5.3
+#overdispersion = 5.6
 anova(mod2, test="F")
 
 mod3 <- glm(fitness~DLpop, family="quasipoisson", data=larvae)
 summary(mod3)
 anova(mod3, test="F")
 
-## models with population effect
+
+
+###models with population effect####
 mod4 <- glm(X.eclosion~pop, family=quasibinomial(link='logit'), 
             weights=oeufs, data=larvae)
 summary(mod4)
