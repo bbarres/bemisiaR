@@ -179,7 +179,7 @@ SmodB1env<-drm(dead/total~dose,environment_type,
                type="binomial",
                pmodels=list(~1, ~1, ~environment_type-1))
 summary(SmodB1env)
-compParm(SmodB1e,"e")
+compParm(SmodB1env,"e")
 anova(SmodB1env,SmodB0)
 
 #effect of the population on LC50 (e)
