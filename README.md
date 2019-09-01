@@ -2,13 +2,13 @@
 
 # Supporting data and code for: Insecticide resistance and fitness cost in *Bemisia tabaci* (Hemiptera: Aleyrodidae) invasive and resident species in La Réunion Island
 
-The data and R code used for the related study. This study is a part of the phD thesis of Alizée Taquet.  
+*The data and R code used for the related study. This study is a part of the phD thesis of Alizée Taquet.* 
 
 ![alt_text](https://xuopmw.db.files.1drv.com/y4mmBsydCI6BUdvygvSlPIAmIrPLoghf_x33qWhWKiPlDOKpS-GyyH7aQWgXA0Dou0CgV5fvmV6OTWGJZOvmzMrX_wJCj9ceO__eJCVUoaQi3VyBS45TNtDpb_KI1uVgcardjHfRSi0DRWlZqjnZGXbCMg2BwSc9KgPTX1zW9MTiVrGWXj2fv40nsjKjrGuotKJQK1m7OvYXgYbDdjP_TggQQ?width=1584&height=588&cropmode=none)
 
 
 ## Context
-
+Whitefly species are among the most difficult pest to control. Some withefly species have an exceptional evolutionary potential that has led to repeated evolution of resistance against most registered insecticides. In La Réunion, an island of the South West Indian Ocean, three whitefly species coexist, two of which are predominant, the indigenous Indian Ocean (IO) and the invasive Middle East Asia Minor 1 (MEAM1) species. Here we assess the resistance level against two insecticides (plenum and supreme, active substance pymetrozine and acetamipride, respectively) of these two species with very different evolutionnary trajectories. We also investigated the effect of resistance to acetamiprid on life history traits related to fitness in the MEAM1 species. This repository describe the datasets used in the study as well as the R scripts necessary for the statistical analyses. 
 
 ## Datasets
 The datasets used in the study can be found in the "dataset" folder. 
@@ -17,7 +17,7 @@ The first dataset contains the results of the dose-response experiments. Each li
 + insecticides-mortality.txt
   + *population_ID*: population ID
   + *species*: the Bemisia tabaci species name (either IO or MEAM1)
-  + *environment_type*: the type of environment the population was sampled from
+  + *environment_type*: the type of environment in which the population was sampled (Non-cultivated, Open field, Field surroundings, Greenhouse or Laboratory)
   + *pesticide*: the name of the pesticide tested (either plenum or supreme)
   + *modality*: either 'control' when there is no pesticide or 'dose'
   + *dose*: concentration of the pesticide (mg/L)
