@@ -138,7 +138,7 @@ plot(main="Estimated Lethal Dose 50 for the tested populations",
      sCompRez$estimate,log="y",las=1,ylab="LC50 estimate (mg/L)",
      col=sCompRez$species,pch=19,cex=2,cex.main=2,ylim=c(0.1,200000))
 abline(v=16.5,lty=2,lwd=4)
-legend("bottomright",c("MEAM1","IO"),pch=19,cex=2,col=c(1,2))
+legend("bottomright",c("MEAM1","IO"),pch=19,cex=1.5,col=c(1,2))
 text(8,200000,labels="Plenum",adj=0.5,cex=2)
 text(27.5,200000,labels="Supreme",adj=0.5,cex=2)
 #expot to pdf file 10 x 8 inches
@@ -151,7 +151,7 @@ abline(v=16.5,lty=2,lwd=4)
 abline(h=1,lty=3,lwd=3)
 abline(h=10,lty=3,lwd=3,col="darkorange")
 abline(h=100,lty=3,lwd=3,col="red")
-legend("bottomright",c("MEAM1","IO"),pch=19,cex=2,col=c(1,2))
+legend("bottomright",c("MEAM1","IO"),pch=19,cex=1.5,col=c(1,2))
 text(8,200000,labels="Plenum",adj=0.5,cex=2)
 text(27.5,200000,labels="Supreme",adj=0.5,cex=2)
 #expot to pdf file 10 x 8 inches
