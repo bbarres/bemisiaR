@@ -1,3 +1,8 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
 [![DOI](https://zenodo.org/badge/133033505.svg)](https://zenodo.org/badge/latestdoi/133033505)
 
 # Supporting data and code for: Insecticide resistance and fitness cost in *Bemisia tabaci* (Hemiptera: Aleyrodidae) invasive and resident species in La Réunion Island
@@ -26,8 +31,25 @@ The first dataset contains the results of the dose-response experiments. Each li
   + *dead*: number of dead individuals at the end of the test
   + *total*: the total number of individuals tested
 
-The second dataset contains the results of the fitness experiments
+The second dataset contains most of the results of the fitness experiments. These tests were made on 7 field populations and one reference laboratory population of the MEAM1 *Bemisia tabaci* species. Each line correspond to a repetition consisting of one adult female fecondated by a male, put in a clip-cage. 
++ traits-egg-larvae.txt
+  + *pop_ID*: population ID
+  + *life_expect*: number of three 
+  + *egg_tot*: total number of eggs laid over the entire
+  + *repetition*: the ID of the repetition for a specific population
+  + *plant*: ID of the coton plant used for the repetition
+  + *eggs*: the number of eggs laid over the first three days period of the experiment
+  + *adults*: number of second generation adults produced during the first three days period of the experiment
+  + *larvae*: number of larvae produced during the first three days period of the experiment
+  + *hatch_rate*: the proportion of eggs produced during the first three days period that has successfully hatched
+  + *larval_surv_rate*: the proportion of eggs produced during the first three days period that has lead to an adult
+  + *DLpop*: the estimate of the median lethal dose of the related population
 
+The third dataset contains the specific results of the female size trait. For each population (7 field populations and one reference laboratory population of the MEAM1 *Bemisia tabaci* species), 20 female were measured from the tip of the head to the end of the abdomen. 
++ female-size.txt
+  + *pop_ID*: population ID
+  + *size*: size of the individual from the tip of the head to the end of the abdomen in millimeter
+  + *DLpop*: the estimate of the median lethal dose of the related population
 
 ## R scripts
 + **load_bemisia_data.R**: the script to load the different datasets and the necessary package in the environment
@@ -36,7 +58,7 @@ The second dataset contains the results of the fitness experiments
 
 
 ## Authors
-
+Alizée Taquet wrote the first draft of **bioassays_drcanalysis.R** script with the help of Benoit Barrès and Hélène Jourdan. Hélène Jourdan wrote the **fitness_analysis.R** script. Benoit Barrès edited, homogenized and commented the final version of the code.
 
 
 ## Citation
