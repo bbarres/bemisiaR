@@ -38,9 +38,6 @@ summary(mortalites)
 #loading the 'egg to larvae' dataset
 larvae<-read.table("data/traits-egg-larvae.txt",header=TRUE,sep="\t")
 
-#loading the 'female traits' dataset
-clip<-read.table("data/traits-female.txt",header=TRUE,sep="\t")
-
 #loading the 'female size' dataset
 sizef<-read.table("data/female-size.txt",header=TRUE,sep="\t")
 

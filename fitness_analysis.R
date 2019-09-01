@@ -5,108 +5,87 @@
 ###############################################################################
 
 source("load_bemisia_data.R")
+#building the lifetime reproduction success
+larvae$lifereprosucc<-larvae$egg_tot*larvae$larval_surv_rate
 
 
 ###############################################################################
-#Egg to adult
+#Effect of the population on the fitness traits
 ###############################################################################
 
-#building the 'fitness' variable
-larvae$fitness<-larvae$euf.tot*larvae$X.emergence
-
-####models with DL50 effect####
 #hatching rate
-mod1 <- glm(X.eclosion~DLpop, family=quasibinomial(link='logit'), 
-            weights=oeufs, data=larvae)
-summary(mod1)
-#overdispersion = 5.8
-anova(mod1, test="F")
-plot(larvae$X.eclosion~larvae$DLpop)
+mod1_pop<-glm(hatch_rate~pop_ID,family=quasibinomial(link='logit'), 
+             weights=eggs,data=larvae)
+summary(mod1_pop)
+anova(mod1_pop,test="F")
+summary(glht(mod1_pop,linfct=mcp(pop_ID="Tukey")))
 
 #larval survival
-mod2 <- glm(X.emergence~DLpop, family=quasibinomial(link='logit'), 
-            weights=oeufs, data=larvae)
-summary(mod2)
-#overdispersion = 5.6
-anova(mod2, test="F")
+mod2_pop<-glm(larval_surv_rate~pop_ID,family=quasibinomial(link='logit'), 
+            weights=eggs,data=larvae)
+summary(mod2_pop)
+anova(mod2_pop,test="F")
+summary(glht(mod2_pop,linfct=mcp(pop_ID="Tukey")))
 
 #lifetime reproductive success
-mod3 <- glm(fitness~DLpop, family="quasipoisson", data=larvae)
-summary(mod3)
-anova(mod3, test="F")
+mod3_pop<-glm(lifereprosucc~pop_ID,family="quasipoisson",data=larvae)
+summary(mod3_pop)
+anova(mod3_pop,test="F")
+
+#fecundity
+mod4_pop<-glm(egg_tot~pop_ID,family="quasipoisson",data=larvae)
+summary(mod4_pop)
+anova(mod4_pop,test="F")
+summary(glht(mod4_pop,linfct=mcp(pop_ID="Tukey")))
+
+#female life expectancy
+mod5_pop<-glm(life_expect~pop_ID,family="poisson",data=larvae)
+summary(mod5_pop)
+anova(mod5_pop,test="Chisq")
+summary(glht(mod5_pop,linfct=mcp(pop_ID="Tukey")))
+
+#female adult size
+mod6_pop<-lm(size~pop_ID,data=sizef)
+anova(mod6_pop)
+summary(mod6_pop)
 
 
-###models with population effect####
+###############################################################################
+#Effect of the DL50 on the fitness traits
+###############################################################################
+
 #hatching rate
-mod4 <- glm(X.eclosion~pop, family=quasibinomial(link='logit'), 
-            weights=oeufs, data=larvae)
-summary(mod4)
-# overdispersion = 5.1
-anova(mod4, test="F")
-summary(glht(mod4,linfct = mcp(pop="Tukey")))
+mod1_DL50<-glm(hatch_rate~DLpop,family=quasibinomial(link='logit'), 
+            weights=eggs,data=larvae)
+summary(mod1_DL50)
+anova(mod1_DL50, test="F")
+plot(larvae$hatch_rate~larvae$DLpop)
 
 #larval survival
-mod5 <- glm(X.emergence~pop, family=quasibinomial(link='logit'), 
-            weights=oeufs, data=larvae)
-summary(mod5)
-# overdispersion = 5.1
-anova(mod5, test="F")
-summary(glht(mod5,linfct = mcp(pop="Tukey")))
+mod2_DL50<-glm(larval_surv_rate~DLpop,family=quasibinomial(link='logit'), 
+            weights=eggs,data=larvae)
+summary(mod2_DL50)
+anova(mod2_DL50,test="F")
 
 #lifetime reproductive success
-mod6 <- glm(fitness~pop, family="quasipoisson", data=larvae)
-summary(mod6)
-anova(mod6, test="F")
+mod3_DL50<-glm(lifereprosucc~DLpop,family="quasipoisson",data=larvae)
+summary(mod3_DL50)
+anova(mod3_DL50,test="F")
 
-
-###############################################################################
-#Female traits
-###############################################################################
-
-###models with DL50 effect####
 #fecundity
-mod1 <- glm(euf.tot~DLpop, family="quasipoisson", data=clip)
-# overdispersion = 35
-summary(mod1)
-anova(mod1, test="F")
+mod4_DL50<-glm(egg_tot~DLpop,family="quasipoisson", data=larvae)
+summary(mod4_DL50)
+anova(mod4_DL50,test="F")
 
 #female life expectancy
-mod2 <- glm(stade.mort~DLpop, family="poisson", data=clip)
-# no overdispersion
-summary(mod2)
-anova(mod2, test="Chisq")
-
-
-###models with population effect####
-#fecundity
-mod3 <- glm(euf.tot~pop, family="quasipoisson", data=clip)
-# overdispersion = 26
-summary(mod3)
-anova(mod3, test="F")
-summary(glht(mod3,linfct = mcp(pop="Tukey")))
-
-#female life expectancy
-mod4 <- glm(stade.mort~pop, family="poisson", data=clip)
-# no overdispersion
-summary(mod4)
-anova(mod4, test="Chisq")
-summary(glht(mod4,linfct = mcp(pop="Tukey")))
-
-
-###############################################################################
-#Female adult size
-###############################################################################
-
-## models
-#female adult size
-mod <- lm(taille~pop, data=sizef)
-anova(mod)
-summary(mod)
+mod5_DL50<-glm(life_expect~DLpop,family="poisson",data=larvae)
+summary(mod5_DL50)
+anova(mod5_DL50,test="Chisq")
 
 #female adult size
-mod1 <- lm(taille~DL50, data=sizef)
-summary(mod1)
-anova(mod1)
+mod6_DL50<-lm(size~DLpop,data=sizef)
+summary(mod6_DL50)
+anova(mod6_DL50)
 
 
 ###############################################################################
