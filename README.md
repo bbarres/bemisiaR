@@ -1,8 +1,3 @@
----
-output:
-  pdf_document: default
-  html_document: default
----
 [![DOI](https://zenodo.org/badge/133033505.svg)](https://zenodo.org/badge/latestdoi/133033505)
 
 # Supporting data and code for: Insecticide resistance and fitness cost in *Bemisia tabaci* (Hemiptera: Aleyrodidae) invasive and resident species in La Réunion Island
