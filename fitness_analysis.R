@@ -15,14 +15,14 @@ larvae$lifereprosucc<-larvae$egg_tot*larvae$larval_surv_rate
 
 #hatching rate
 mod1_pop<-glm(hatch_rate~pop_ID,family=quasibinomial(link='logit'), 
-             weights=eggs,data=larvae)
+              weights=eggs,data=larvae)
 summary(mod1_pop)
 anova(mod1_pop,test="F")
 summary(glht(mod1_pop,linfct=mcp(pop_ID="Tukey")))
 
 #larval survival
 mod2_pop<-glm(larval_surv_rate~pop_ID,family=quasibinomial(link='logit'), 
-            weights=eggs,data=larvae)
+              weights=eggs,data=larvae)
 summary(mod2_pop)
 anova(mod2_pop,test="F")
 summary(glht(mod2_pop,linfct=mcp(pop_ID="Tukey")))
@@ -56,14 +56,14 @@ summary(mod6_pop)
 
 #hatching rate
 mod1_DL50<-glm(hatch_rate~DLpop,family=quasibinomial(link='logit'), 
-            weights=eggs,data=larvae)
+               weights=eggs,data=larvae)
 summary(mod1_DL50)
 anova(mod1_DL50, test="F")
 plot(larvae$hatch_rate~larvae$DLpop)
 
 #larval survival
 mod2_DL50<-glm(larval_surv_rate~DLpop,family=quasibinomial(link='logit'), 
-            weights=eggs,data=larvae)
+               weights=eggs,data=larvae)
 summary(mod2_DL50)
 anova(mod2_DL50,test="F")
 
