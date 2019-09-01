@@ -30,7 +30,7 @@ The second dataset contains most of the results of the fitness experiments. Thes
 + traits-egg-larvae.txt
   + *pop_ID*: population ID
   + *life_expect*: number of three 
-  + *egg_tot*: total number of eggs laid over the entire
+  + *egg_tot*: total number of eggs laid over the entire clip-cage experiment
   + *repetition*: the ID of the repetition for a specific population
   + *plant*: ID of the coton plant used for the repetition
   + *eggs*: the number of eggs laid over the first three days period of the experiment
@@ -40,7 +40,7 @@ The second dataset contains most of the results of the fitness experiments. Thes
   + *larval_surv_rate*: the proportion of eggs produced during the first three days period that has lead to an adult
   + *DLpop*: the estimate of the median lethal dose of the related population
 
-The third dataset contains the specific results of the female size trait. For each population (7 field populations and one reference laboratory population of the MEAM1 *Bemisia tabaci* species), 20 female were measured from the tip of the head to the end of the abdomen. 
+The third dataset contains the specific results of the female size trait. For each population (7 field populations and one reference laboratory population of the MEAM1 *Bemisia tabaci* species), 20 females were measured from the tip of the head to the end of the abdomen. 
 + female-size.txt
   + *pop_ID*: population ID
   + *size*: size of the individual from the tip of the head to the end of the abdomen in millimeter
@@ -62,4 +62,3 @@ You will hopefully soon be able to cite the related study as follow:
 
 If you want to use (some of) the code found on this page or if you want to cite this repository: 
 + Alizée Taquet, Hélène Jourdan and Benoit Barrès. bbarres/bemisiaR: [Supporting data and code for: Insecticide resistance and fitness cost in *Bemisia tabaci* (Hemiptera: Aleyrodidae) invasive and resident species in La Réunion Island. Zenodo; 2019.](https://zenodo.org/badge/latestdoi/133033505)
-
