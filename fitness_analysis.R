@@ -6,7 +6,7 @@
 
 source("load_bemisia_data.R")
 #building the lifetime reproduction success
-larvae$lifereprosucc<-larvae$egg_tot*larvae$larval_surv_rate
+larvae$lifereprosucc<-larvae$egg_tot*larvae$eggtoadult_surv_rate
 
 
 ##############################################################################/
@@ -20,8 +20,8 @@ summary(mod1_pop)
 anova(mod1_pop,test="F")
 summary(glht(mod1_pop,linfct=mcp(pop_ID="Tukey")))
 
-#larval survival
-mod2_pop<-glm(larval_surv_rate~pop_ID,family=quasibinomial(link='logit'), 
+#egg to adult survival rate
+mod2_pop<-glm(eggtoadult_surv_rate~pop_ID,family=quasibinomial(link='logit'), 
               weights=eggs,data=larvae)
 summary(mod2_pop)
 anova(mod2_pop,test="F")
@@ -31,6 +31,7 @@ summary(glht(mod2_pop,linfct=mcp(pop_ID="Tukey")))
 mod3_pop<-glm(lifereprosucc~pop_ID,family="quasipoisson",data=larvae)
 summary(mod3_pop)
 anova(mod3_pop,test="F")
+summary(glht(mod3_pop,linfct=mcp(pop_ID="Tukey")))
 
 #fecundity
 mod4_pop<-glm(egg_tot~pop_ID,family="quasipoisson",data=larvae)
@@ -59,10 +60,9 @@ mod1_DL50<-glm(hatch_rate~DLpop,family=quasibinomial(link='logit'),
                weights=eggs,data=larvae)
 summary(mod1_DL50)
 anova(mod1_DL50, test="F")
-plot(larvae$hatch_rate~larvae$DLpop)
 
-#larval survival
-mod2_DL50<-glm(larval_surv_rate~DLpop,family=quasibinomial(link='logit'), 
+#egg to adult survival rate
+mod2_DL50<-glm(eggtoadult_surv_rate~DLpop,family=quasibinomial(link='logit'), 
                weights=eggs,data=larvae)
 summary(mod2_DL50)
 anova(mod2_DL50,test="F")
