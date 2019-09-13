@@ -53,12 +53,12 @@ The third dataset contains the specific results of the female size trait. For ea
 
 
 ## Authors
-Alizée Taquet wrote the first draft of **bioassays_drcanalysis.R** script with the help of Benoit Barrès and Hélène Jourdan. Hélène Jourdan wrote the **fitness_analysis.R** script. Benoit Barrès edited, homogenized and commented the final version of the code.
+Alizée Taquet wrote the first draft of **bioassays_drcanalysis.R** script with the help of Benoit Barrès and Hélène Jourdan-Pineau. Hélène Jourdan-Pineau wrote the **fitness_analysis.R** script. Benoit Barrès edited, homogenized and commented the final version of the code.
 
 
 ## Citation
 You will hopefully soon be able to cite the related study as follow: 
-+ Taquet A., Delatte H., Barrès B., Simiand C., Grondin M. and Jourdan H. [Insecticide resistance and fitness cost in *Bemisia tabaci* (Hemiptera: Aleyrodidae) invasive and resident species in La Réunion Island. *submitted*.](to be completed)
++ Taquet A., Delatte H., Barrès B., Simiand C., Grondin M. and Jourdan-Pineau H. [Insecticide resistance and fitness cost in *Bemisia tabaci* (Hemiptera: Aleyrodidae) invasive and resident species in La Réunion Island. *submitted*.](to be completed)
 
 If you want to use (some of) the code found on this page or if you want to cite this repository: 
-+ Alizée Taquet, Hélène Jourdan and Benoit Barrès. bbarres/bemisiaR: [Supporting data and code for: Insecticide resistance and fitness cost in *Bemisia tabaci* (Hemiptera: Aleyrodidae) invasive and resident species in La Réunion Island. Zenodo; 2019.](https://zenodo.org/badge/latestdoi/133033505)
++ Alizée Taquet, Hélène Jourdan-Pineau and Benoit Barrès. bbarres/bemisiaR: [Supporting data and code for: Insecticide resistance and fitness cost in *Bemisia tabaci* (Hemiptera: Aleyrodidae) invasive and resident species in La Réunion Island. Zenodo; 2019.](https://zenodo.org/badge/latestdoi/133033505)
