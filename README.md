@@ -29,8 +29,8 @@ The first dataset contains the results of the dose-response experiments. Each li
 The second dataset contains most of the results of the fitness experiments. These tests were made on 7 field populations and one reference laboratory population of the MEAM1 *Bemisia tabaci* species. Each line correspond to a repetition consisting of one adult female fecondated by a male, put in a clip-cage. 
 + traits-egg-larvae.txt
   + *pop_ID*: population ID
-  + *life_expect*: number of three 
-  + *egg_tot*: total number of eggs laid over the entire clip-cage experiment
+  + *life_expect*: number of days the female survived in the clip-cage. Mortality was only recorded every 3 days 
+  + *egg_tot*: total number of eggs laid over the entire life
   + *repetition*: the ID of the repetition for a specific population
   + *plant*: ID of the coton plant used for the repetition
   + *eggs*: the number of eggs laid over the first three days period of the experiment
