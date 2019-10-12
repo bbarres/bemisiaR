@@ -48,7 +48,7 @@ The third dataset contains the specific results of the female size trait. For ea
 
 ## R scripts
 + **load_bemisia_data.R**: the script to load the different datasets and the necessary package in the environment
-+ **bioassays_drcanalysis.R**: this script is used to estimate the 50% lethal dose for the different experiments and to compare the different LC50 of the different populations
++ **bioassays_drcanalysis.R**: this script is used to estimate the 50% lethal dose (LD50) for the different experiments and to compare the different LD50 of the different populations
 + **fitness_analysis.R**: this script was used to analyze the data on the impact of insecticide resistance on the fitness of *Bemisia tabaci* MEAM1 populations. 
 
 

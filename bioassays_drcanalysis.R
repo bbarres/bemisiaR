@@ -4,6 +4,7 @@
 ##############################################################################/
 ##############################################################################/
 
+#loading the dataset and the necessary library
 source("load_bemisia_data.R")
 #checking the number of experiment for the different species, 
 #populations and pesticides. 
@@ -14,7 +15,8 @@ table(gamme$population_ID,gamme$pesticide,gamme$species)
 #Dose response curve analyses####
 ##############################################################################/
 
-#first we extract the list of the different SA listed in the file
+#first we extract the list of the different active substance (SA) listed 
+#in the file
 SAlist<-levels(gamme$pesticide)
 CompRez<-data.frame(pesticide=factor(),population_ID=factor(),
                     species=character(),parameter=character(),
@@ -24,9 +26,9 @@ CompRez<-data.frame(pesticide=factor(),population_ID=factor(),
 for (j in 1:length(SAlist)) {
   data_subSA<-gamme[gamme$pesticide==SAlist[j],]
   data_subSA$population_ID<-drop.levels(data_subSA$population_ID)
-  #some population never reach a "global" mortality rate of 50%, even at 
-  #the highest tested dose. We assigne a LC50 superior to the maximum dose
-  #tested to these populations
+  #some population never reach a mortality rate of 50%, even at 
+  #the highest tested dose. We assigne a mediam Lethal Dose (LD50) 
+  #superior to the maximum dose tested to these populations
   OBP<-mortalites[mortalites$dose==max(data_subSA$dose) &
                     mortalites$pesticide==SAlist[j] & 
                     mortalites$percdeath<0.500001,
@@ -45,7 +47,8 @@ for (j in 1:length(SAlist)) {
                            SD=NA,t_value=NA,p_value=NA)
   )
   
-  #we limit the dataset to the population that reach somehow a IC of 50%
+  #we then analyse the remaining populations, first we limit the dataset
+  #to the populations that reach a mortality rate of 50%
   POPlist<-levels(data_subSA$population_ID)
   POPlist<-POPlist[!(POPlist %in% as.character((OBP$population_ID)))]
   
@@ -124,7 +127,7 @@ sCompRez[sCompRez$species=="MEAM1" & sCompRez$pesticide=="plenum",
                    sCompRez[sCompRez$population_ID=="MEAM1" & 
                               sCompRez$pesticide=="plenum","RR"])
 
-#exporting the result as a text file
+#exporting the result table as a text file
 write.table(sCompRez, file="output/results_bemisia.txt",
             sep="\t",quote=FALSE,row.names=FALSE)
 
@@ -154,7 +157,7 @@ abline(h=100,lty=3,lwd=3,col="red")
 legend("bottomright",c("MEAM1","IO"),pch=19,cex=1.5,col=c(1,2))
 text(8,200000,labels="Plenum",adj=0.5,cex=2)
 text(27.5,200000,labels="Supreme",adj=0.5,cex=2)
-#expot to pdf file 10 x 8 inches
+#export to pdf file 10 x 8 inches
 
 
 ##############################################################################/
@@ -170,7 +173,7 @@ SmodB0<-drm(dead/total~dose,environment_type,
             type="binomial")
 summary(SmodB0)
 
-#effect of the environment on LC50 (e)
+#testing the effect of the environment on LD50 (ie the 'e' parameter)
 SmodB1env<-drm(dead/total~dose,environment_type,
                weights=total,
                data=gamme[which(gamme$pesticide=="supreme" & 
@@ -182,7 +185,7 @@ summary(SmodB1env)
 compParm(SmodB1env,"e")
 anova(SmodB1env,SmodB0)
 
-#effect of the population on LC50 (e)
+#testing the effect of the population on LD50 (ie the 'e' parameter)
 SmodB1e<-drm(dead/total~dose,environment_type,
              weights=total,
              data=gamme[which(gamme$pesticide=="supreme" & 
