@@ -13,6 +13,10 @@ larvae$lifereprosucc<-larvae$egg_tot*larvae$eggtoadult_surv_rate
 #Effect of the population on the fitness traits####
 ##############################################################################/
 
+#the effect of the population on the fitness traits is evaluated in 
+#generalized linear model framework, except for the adult size which has been
+#modeled in a linear framework
+
 #hatching rate
 mod1_pop<-glm(hatch_rate~pop_ID,family=quasibinomial(link='logit'), 
               weights=eggs,data=larvae)
@@ -52,8 +56,12 @@ summary(mod6_pop)
 
 
 ##############################################################################/
-#Effect of the DL50 on the fitness traits####
+#Effect of the LD50 on the fitness traits####
 ##############################################################################/
+
+#the effect of the LD50 on the fitness traits is evaluated in 
+#generalized linear model framework, except for the adult size which has been
+#modeled in a linear framework
 
 #hatching rate
 mod1_DL50<-glm(hatch_rate~DLpop,family=quasibinomial(link='logit'), 
