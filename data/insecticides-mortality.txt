@@ -1,0 +1,921 @@
+population_ID	species	environment_type	pesticide	modality	dose	repetition_ID	alive	dead	total
+IO	IO	Laboratory	supreme	control	0	r1	15	0	15
+IO	IO	Laboratory	supreme	control	0	r2	14	1	15
+IO	IO	Laboratory	supreme	control	0	r3	15	0	15
+IO	IO	Laboratory	supreme	control	0	r4	12	3	15
+IO	IO	Laboratory	supreme	dose	4.06	r1	4	11	15
+IO	IO	Laboratory	supreme	dose	4.06	r2	6	9	15
+IO	IO	Laboratory	supreme	dose	4.06	r3	2	13	15
+IO	IO	Laboratory	supreme	dose	4.06	r4	6	9	15
+IO	IO	Laboratory	supreme	dose	8.13	r1	3	11	14
+IO	IO	Laboratory	supreme	dose	8.13	r2	2	12	14
+IO	IO	Laboratory	supreme	dose	8.13	r3	3	11	14
+IO	IO	Laboratory	supreme	dose	8.13	r4	0	15	15
+IO	IO	Laboratory	supreme	dose	16.25	r1	2	13	15
+IO	IO	Laboratory	supreme	dose	16.25	r2	1	14	15
+IO	IO	Laboratory	supreme	dose	16.25	r3	0	15	15
+IO	IO	Laboratory	supreme	dose	16.25	r4	1	14	15
+IO	IO	Laboratory	supreme	dose	32.5	r1	0	16	16
+IO	IO	Laboratory	supreme	dose	32.5	r2	3	12	15
+IO	IO	Laboratory	supreme	dose	32.5	r3	0	15	15
+IO	IO	Laboratory	supreme	dose	32.5	r4	0	14	14
+IO	IO	Laboratory	supreme	dose	65	r1	0	15	15
+IO	IO	Laboratory	supreme	dose	65	r2	0	15	15
+IO	IO	Laboratory	supreme	dose	65	r3	0	15	15
+IO	IO	Laboratory	supreme	dose	65	r4	0	15	15
+IO	IO	Laboratory	supreme	dose	130	r1	0	15	15
+IO	IO	Laboratory	supreme	dose	130	r2	0	15	15
+IO	IO	Laboratory	supreme	dose	130	r3	0	15	15
+IO	IO	Laboratory	supreme	dose	130	r4	0	15	15
+IO	IO	Laboratory	supreme	dose	260	r1	0	15	15
+IO	IO	Laboratory	supreme	dose	260	r2	1	14	15
+IO	IO	Laboratory	supreme	dose	260	r3	0	15	15
+IO	IO	Laboratory	supreme	dose	260	r4	0	15	15
+IO	IO	Laboratory	supreme	control	0	r1	14	1	15
+IO	IO	Laboratory	supreme	control	0	r2	13	1	14
+IO	IO	Laboratory	supreme	control	0	r3	14	1	15
+IO	IO	Laboratory	supreme	control	0	r4	14	1	15
+IO	IO	Laboratory	supreme	dose	0.51	r1	11	4	15
+IO	IO	Laboratory	supreme	dose	0.51	r2	13	1	14
+IO	IO	Laboratory	supreme	dose	0.51	r3	12	3	15
+IO	IO	Laboratory	supreme	dose	0.51	r4	13	2	15
+IO	IO	Laboratory	supreme	dose	1.02	r1	14	1	15
+IO	IO	Laboratory	supreme	dose	1.02	r2	10	5	15
+IO	IO	Laboratory	supreme	dose	1.02	r3	10	4	14
+IO	IO	Laboratory	supreme	dose	1.02	r4	12	3	15
+IO	IO	Laboratory	supreme	dose	2.03	r1	8	7	15
+IO	IO	Laboratory	supreme	dose	2.03	r2	5	9	14
+IO	IO	Laboratory	supreme	dose	2.03	r3	8	7	15
+IO	IO	Laboratory	supreme	dose	2.03	r4	7	6	13
+IO	IO	Laboratory	supreme	dose	4.06	r1	5	10	15
+IO	IO	Laboratory	supreme	dose	4.06	r2	2	13	15
+IO	IO	Laboratory	supreme	dose	4.06	r3	5	10	15
+IO	IO	Laboratory	supreme	dose	4.06	r4	2	13	15
+IO	IO	Laboratory	supreme	dose	8.13	r1	3	12	15
+IO	IO	Laboratory	supreme	dose	8.13	r2	4	11	15
+IO	IO	Laboratory	supreme	dose	8.13	r3	1	14	15
+IO	IO	Laboratory	supreme	dose	8.13	r4	1	14	15
+IO	IO	Laboratory	supreme	dose	65	r1	0	15	15
+IO	IO	Laboratory	supreme	dose	65	r2	0	15	15
+IO	IO	Laboratory	supreme	dose	65	r3	0	15	15
+IO	IO	Laboratory	supreme	dose	65	r4	0	15	15
+P64MEAM1	MEAM1	Non-cultivated	supreme	control	0	r1	8	0	8
+P64MEAM1	MEAM1	Non-cultivated	supreme	dose	1.02	r1	11	1	12
+P64MEAM1	MEAM1	Non-cultivated	supreme	dose	2.03	r1	11	1	12
+P64MEAM1	MEAM1	Non-cultivated	supreme	dose	4.06	r1	7	1	8
+P64MEAM1	MEAM1	Non-cultivated	supreme	dose	8.13	r1	4	7	11
+P64MEAM1	MEAM1	Non-cultivated	supreme	dose	16.25	r1	5	3	8
+P64MEAM1	MEAM1	Non-cultivated	supreme	dose	32.5	r1	11	5	16
+P64MEAM1	MEAM1	Non-cultivated	supreme	dose	130	r1	2	3	5
+P64IO	IO	Non-cultivated	supreme	control	0	r1	29	0	29
+P64IO	IO	Non-cultivated	supreme	dose	1.02	r1	18	6	24
+P64IO	IO	Non-cultivated	supreme	dose	2.03	r1	15	6	21
+P64IO	IO	Non-cultivated	supreme	dose	4.06	r1	10	9	19
+P64IO	IO	Non-cultivated	supreme	dose	8.13	r1	1	27	28
+P64IO	IO	Non-cultivated	supreme	dose	16.25	r1	2	28	30
+P64IO	IO	Non-cultivated	supreme	dose	32.5	r1	0	22	22
+P64IO	IO	Non-cultivated	supreme	dose	130	r1	0	36	36
+P35	IO	Non-cultivated	supreme	control	0	r1	12	3	15
+P35	IO	Non-cultivated	supreme	control	0	r2	15	0	15
+P35	IO	Non-cultivated	supreme	control	0	r3	15	0	15
+P35	IO	Non-cultivated	supreme	dose	1.02	r1	11	4	15
+P35	IO	Non-cultivated	supreme	dose	1.02	r2	14	1	15
+P35	IO	Non-cultivated	supreme	dose	1.02	r3	12	3	15
+P35	IO	Non-cultivated	supreme	dose	2.03	r1	6	9	15
+P35	IO	Non-cultivated	supreme	dose	2.03	r2	7	8	15
+P35	IO	Non-cultivated	supreme	dose	2.03	r3	7	8	15
+P35	IO	Non-cultivated	supreme	dose	4.06	r1	0	15	15
+P35	IO	Non-cultivated	supreme	dose	4.06	r2	0	15	15
+P35	IO	Non-cultivated	supreme	dose	4.06	r3	5	10	15
+P35	IO	Non-cultivated	supreme	dose	8.13	r1	4	11	15
+P35	IO	Non-cultivated	supreme	dose	8.13	r2	1	14	15
+P35	IO	Non-cultivated	supreme	dose	8.13	r3	2	13	15
+P35	IO	Non-cultivated	supreme	dose	16.25	r1	0	15	15
+P35	IO	Non-cultivated	supreme	dose	16.25	r2	0	15	15
+P35	IO	Non-cultivated	supreme	dose	16.25	r3	0	15	15
+P35	IO	Non-cultivated	supreme	dose	32.5	r1	0	15	15
+P35	IO	Non-cultivated	supreme	dose	32.5	r2	0	15	15
+P35	IO	Non-cultivated	supreme	dose	32.5	r3	0	15	15
+P35	IO	Non-cultivated	supreme	dose	130	r1	0	15	15
+P35	IO	Non-cultivated	supreme	dose	130	r2	0	15	15
+P35	IO	Non-cultivated	supreme	dose	130	r3	0	15	15
+P56	MEAM1	Open field	plenum	control	0	r1	14	1	15
+P56	MEAM1	Open field	plenum	control	0	r2	15	0	15
+P56	MEAM1	Open field	plenum	control	0	r3	14	1	15
+P56	MEAM1	Open field	plenum	control	0	r4	15	0	15
+P56	MEAM1	Open field	plenum	dose	9.77	r1	14	0	14
+P56	MEAM1	Open field	plenum	dose	9.77	r2	15	0	15
+P56	MEAM1	Open field	plenum	dose	9.77	r3	13	2	15
+P56	MEAM1	Open field	plenum	dose	9.77	r4	14	1	15
+P56	MEAM1	Open field	plenum	dose	39.06	r1	11	4	15
+P56	MEAM1	Open field	plenum	dose	39.06	r2	15	0	15
+P56	MEAM1	Open field	plenum	dose	39.06	r3	13	2	15
+P56	MEAM1	Open field	plenum	dose	39.06	r4	11	4	15
+P56	MEAM1	Open field	plenum	dose	156.25	r1	9	6	15
+P56	MEAM1	Open field	plenum	dose	156.25	r2	13	2	15
+P56	MEAM1	Open field	plenum	dose	156.25	r3	15	0	15
+P56	MEAM1	Open field	plenum	dose	156.25	r4	14	1	15
+P56	MEAM1	Open field	plenum	dose	625	r1	7	8	15
+P56	MEAM1	Open field	plenum	dose	625	r2	12	2	14
+P56	MEAM1	Open field	plenum	dose	625	r3	11	1	12
+P56	MEAM1	Open field	plenum	dose	625	r4	13	2	15
+P56	MEAM1	Open field	plenum	dose	2500	r1	14	1	15
+P56	MEAM1	Open field	plenum	dose	2500	r2	13	2	15
+P56	MEAM1	Open field	plenum	dose	2500	r3	10	4	14
+P56	MEAM1	Open field	plenum	dose	2500	r4	15	0	15
+P56	MEAM1	Open field	plenum	dose	10000	r1	12	3	15
+P56	MEAM1	Open field	plenum	dose	10000	r2	12	2	14
+P56	MEAM1	Open field	plenum	dose	10000	r3	8	7	15
+P56	MEAM1	Open field	plenum	dose	10000	r4	15	0	15
+P55	MEAM1	Greenhouse	plenum	control	0	r1	13	2	15
+P55	MEAM1	Greenhouse	plenum	control	0	r2	14	1	15
+P55	MEAM1	Greenhouse	plenum	control	0	r3	13	2	15
+P55	MEAM1	Greenhouse	plenum	control	0	r4	15	0	15
+P55	MEAM1	Greenhouse	plenum	dose	9.77	r1	13	2	15
+P55	MEAM1	Greenhouse	plenum	dose	9.77	r2	14	1	15
+P55	MEAM1	Greenhouse	plenum	dose	9.77	r3	14	1	15
+P55	MEAM1	Greenhouse	plenum	dose	9.77	r4	13	2	15
+P55	MEAM1	Greenhouse	plenum	dose	39.06	r1	12	3	15
+P55	MEAM1	Greenhouse	plenum	dose	39.06	r2	14	1	15
+P55	MEAM1	Greenhouse	plenum	dose	39.06	r3	13	1	14
+P55	MEAM1	Greenhouse	plenum	dose	39.06	r4	14	1	15
+P55	MEAM1	Greenhouse	plenum	dose	156.25	r1	11	3	14
+P55	MEAM1	Greenhouse	plenum	dose	156.25	r2	12	3	15
+P55	MEAM1	Greenhouse	plenum	dose	156.25	r3	12	3	15
+P55	MEAM1	Greenhouse	plenum	dose	156.25	r4	13	2	15
+P55	MEAM1	Greenhouse	plenum	dose	625	r1	8	7	15
+P55	MEAM1	Greenhouse	plenum	dose	625	r2	14	1	15
+P55	MEAM1	Greenhouse	plenum	dose	625	r3	14	1	15
+P55	MEAM1	Greenhouse	plenum	dose	625	r4	11	4	15
+P55	MEAM1	Greenhouse	plenum	dose	2500	r1	14	1	15
+P55	MEAM1	Greenhouse	plenum	dose	2500	r2	13	2	15
+P55	MEAM1	Greenhouse	plenum	dose	2500	r3	10	4	14
+P55	MEAM1	Greenhouse	plenum	dose	2500	r4	7	8	15
+P55	MEAM1	Greenhouse	plenum	dose	10000	r1	4	11	15
+P55	MEAM1	Greenhouse	plenum	dose	10000	r2	8	7	15
+P55	MEAM1	Greenhouse	plenum	dose	10000	r3	5	10	15
+P55	MEAM1	Greenhouse	plenum	dose	10000	r4	5	10	15
+MEAM1	MEAM1	Laboratory	plenum	control	0	r1	12	3	15
+MEAM1	MEAM1	Laboratory	plenum	control	0	r2	12	3	15
+MEAM1	MEAM1	Laboratory	plenum	control	0	r3	14	1	15
+MEAM1	MEAM1	Laboratory	plenum	control	0	r4	11	4	15
+MEAM1	MEAM1	Laboratory	plenum	dose	2.44	r1	10	5	15
+MEAM1	MEAM1	Laboratory	plenum	dose	2.44	r2	9	6	15
+MEAM1	MEAM1	Laboratory	plenum	dose	2.44	r3	2	13	15
+MEAM1	MEAM1	Laboratory	plenum	dose	2.44	r4	4	11	15
+MEAM1	MEAM1	Laboratory	plenum	dose	9.77	r1	1	14	15
+MEAM1	MEAM1	Laboratory	plenum	dose	9.77	r2	1	14	15
+MEAM1	MEAM1	Laboratory	plenum	dose	9.77	r3	1	14	15
+MEAM1	MEAM1	Laboratory	plenum	dose	9.77	r4	3	12	15
+MEAM1	MEAM1	Laboratory	plenum	dose	39.06	r1	1	14	15
+MEAM1	MEAM1	Laboratory	plenum	dose	39.06	r2	2	13	15
+MEAM1	MEAM1	Laboratory	plenum	dose	39.06	r3	1	14	15
+MEAM1	MEAM1	Laboratory	plenum	dose	39.06	r4	1	14	15
+MEAM1	MEAM1	Laboratory	plenum	dose	156.25	r1	0	15	15
+MEAM1	MEAM1	Laboratory	plenum	dose	156.25	r2	0	15	15
+MEAM1	MEAM1	Laboratory	plenum	dose	156.25	r3	0	15	15
+MEAM1	MEAM1	Laboratory	plenum	dose	156.25	r4	2	13	15
+MEAM1	MEAM1	Laboratory	plenum	dose	625	r1	1	14	15
+MEAM1	MEAM1	Laboratory	plenum	dose	625	r2	1	14	15
+MEAM1	MEAM1	Laboratory	plenum	dose	625	r3	1	14	15
+MEAM1	MEAM1	Laboratory	plenum	dose	625	r4	1	14	15
+MEAM1	MEAM1	Laboratory	plenum	dose	2500	r1	0	15	15
+MEAM1	MEAM1	Laboratory	plenum	dose	2500	r2	0	15	15
+MEAM1	MEAM1	Laboratory	plenum	dose	2500	r3	1	14	15
+MEAM1	MEAM1	Laboratory	plenum	dose	2500	r4	0	15	15
+MEAM1	MEAM1	Laboratory	plenum	dose	10000	r1	0	15	15
+MEAM1	MEAM1	Laboratory	plenum	dose	10000	r2	0	15	15
+MEAM1	MEAM1	Laboratory	plenum	dose	10000	r3	0	15	15
+MEAM1	MEAM1	Laboratory	plenum	dose	10000	r4	0	15	15
+P13	MEAM1	Greenhouse	plenum	control	0	r1	15	0	15
+P13	MEAM1	Greenhouse	plenum	control	0	r2	12	3	15
+P13	MEAM1	Greenhouse	plenum	control	0	r3	14	1	15
+P13	MEAM1	Greenhouse	plenum	control	0	r4	14	1	15
+P13	MEAM1	Greenhouse	plenum	dose	9.77	r1	14	1	15
+P13	MEAM1	Greenhouse	plenum	dose	9.77	r2	14	0	14
+P13	MEAM1	Greenhouse	plenum	dose	9.77	r3	14	1	15
+P13	MEAM1	Greenhouse	plenum	dose	9.77	r4	14	1	15
+P13	MEAM1	Greenhouse	plenum	dose	39.06	r1	12	3	15
+P13	MEAM1	Greenhouse	plenum	dose	39.06	r2	14	1	15
+P13	MEAM1	Greenhouse	plenum	dose	39.06	r3	15	0	15
+P13	MEAM1	Greenhouse	plenum	dose	39.06	r4	15	0	15
+P13	MEAM1	Greenhouse	plenum	dose	156.25	r1	14	1	15
+P13	MEAM1	Greenhouse	plenum	dose	156.25	r2	13	2	15
+P13	MEAM1	Greenhouse	plenum	dose	156.25	r3	13	2	15
+P13	MEAM1	Greenhouse	plenum	dose	156.25	r4	15	0	15
+P13	MEAM1	Greenhouse	plenum	dose	625	r1	12	2	14
+P13	MEAM1	Greenhouse	plenum	dose	625	r2	15	0	15
+P13	MEAM1	Greenhouse	plenum	dose	625	r3	14	1	15
+P13	MEAM1	Greenhouse	plenum	dose	625	r4	13	2	15
+P13	MEAM1	Greenhouse	plenum	dose	2500	r1	13	2	15
+P13	MEAM1	Greenhouse	plenum	dose	2500	r2	13	2	15
+P13	MEAM1	Greenhouse	plenum	dose	2500	r3	15	0	15
+P13	MEAM1	Greenhouse	plenum	dose	2500	r4	13	2	15
+P13	MEAM1	Greenhouse	plenum	dose	10000	r1	12	3	15
+P13	MEAM1	Greenhouse	plenum	dose	10000	r2	14	1	15
+P13	MEAM1	Greenhouse	plenum	dose	10000	r3	13	1	14
+P13	MEAM1	Greenhouse	plenum	dose	10000	r4	9	6	15
+P21	MEAM1	Greenhouse	plenum	control	0	r1	14	1	15
+P21	MEAM1	Greenhouse	plenum	control	0	r2	14	1	15
+P21	MEAM1	Greenhouse	plenum	control	0	r3	15	0	15
+P21	MEAM1	Greenhouse	plenum	control	0	r4	13	2	15
+P21	MEAM1	Greenhouse	plenum	dose	9.77	r1	13	2	15
+P21	MEAM1	Greenhouse	plenum	dose	9.77	r2	15	0	15
+P21	MEAM1	Greenhouse	plenum	dose	9.77	r3	13	2	15
+P21	MEAM1	Greenhouse	plenum	dose	9.77	r4	15	0	15
+P21	MEAM1	Greenhouse	plenum	dose	39.06	r1	15	0	15
+P21	MEAM1	Greenhouse	plenum	dose	39.06	r2	15	0	15
+P21	MEAM1	Greenhouse	plenum	dose	39.06	r3	13	2	15
+P21	MEAM1	Greenhouse	plenum	dose	39.06	r4	13	2	15
+P21	MEAM1	Greenhouse	plenum	dose	156.25	r1	11	4	15
+P21	MEAM1	Greenhouse	plenum	dose	156.25	r2	14	1	15
+P21	MEAM1	Greenhouse	plenum	dose	156.25	r3	11	4	15
+P21	MEAM1	Greenhouse	plenum	dose	156.25	r4	12	3	15
+P21	MEAM1	Greenhouse	plenum	dose	625	r1	14	1	15
+P21	MEAM1	Greenhouse	plenum	dose	625	r2	15	0	15
+P21	MEAM1	Greenhouse	plenum	dose	625	r3	14	1	15
+P21	MEAM1	Greenhouse	plenum	dose	625	r4	15	0	15
+P21	MEAM1	Greenhouse	plenum	dose	2500	r1	13	2	15
+P21	MEAM1	Greenhouse	plenum	dose	2500	r2	12	3	15
+P21	MEAM1	Greenhouse	plenum	dose	2500	r3	13	2	15
+P21	MEAM1	Greenhouse	plenum	dose	2500	r4	14	1	15
+P21	MEAM1	Greenhouse	plenum	dose	10000	r1	14	0	14
+P21	MEAM1	Greenhouse	plenum	dose	10000	r2	13	2	15
+P21	MEAM1	Greenhouse	plenum	dose	10000	r3	13	2	15
+P21	MEAM1	Greenhouse	plenum	dose	10000	r4	12	3	15
+P25	MEAM1	Greenhouse	plenum	control	0	r1	13	2	15
+P25	MEAM1	Greenhouse	plenum	control	0	r2	13	2	15
+P25	MEAM1	Greenhouse	plenum	control	0	r3	15	0	15
+P25	MEAM1	Greenhouse	plenum	control	0	r4	14	1	15
+P25	MEAM1	Greenhouse	plenum	dose	9.77	r1	13	2	15
+P25	MEAM1	Greenhouse	plenum	dose	9.77	r2	14	1	15
+P25	MEAM1	Greenhouse	plenum	dose	9.77	r3	12	3	15
+P25	MEAM1	Greenhouse	plenum	dose	9.77	r4	11	4	15
+P25	MEAM1	Greenhouse	plenum	dose	39.06	r1	10	5	15
+P25	MEAM1	Greenhouse	plenum	dose	39.06	r2	14	1	15
+P25	MEAM1	Greenhouse	plenum	dose	39.06	r3	12	3	15
+P25	MEAM1	Greenhouse	plenum	dose	39.06	r4	13	2	15
+P25	MEAM1	Greenhouse	plenum	dose	156.25	r1	13	2	15
+P25	MEAM1	Greenhouse	plenum	dose	156.25	r2	15	0	15
+P25	MEAM1	Greenhouse	plenum	dose	156.25	r3	14	1	15
+P25	MEAM1	Greenhouse	plenum	dose	156.25	r4	15	0	15
+P25	MEAM1	Greenhouse	plenum	dose	625	r1	12	3	15
+P25	MEAM1	Greenhouse	plenum	dose	625	r2	11	4	15
+P25	MEAM1	Greenhouse	plenum	dose	625	r3	11	4	15
+P25	MEAM1	Greenhouse	plenum	dose	625	r4	11	4	15
+P25	MEAM1	Greenhouse	plenum	dose	2500	r1	12	3	15
+P25	MEAM1	Greenhouse	plenum	dose	2500	r2	12	3	15
+P25	MEAM1	Greenhouse	plenum	dose	2500	r3	11	4	15
+P25	MEAM1	Greenhouse	plenum	dose	2500	r4	14	1	15
+P25	MEAM1	Greenhouse	plenum	dose	10000	r1	13	2	15
+P25	MEAM1	Greenhouse	plenum	dose	10000	r2	13	2	15
+P25	MEAM1	Greenhouse	plenum	dose	10000	r3	14	1	15
+P25	MEAM1	Greenhouse	plenum	dose	10000	r4	11	4	15
+MEAM1	MEAM1	Laboratory	plenum	control	0	r1	15	0	15
+MEAM1	MEAM1	Laboratory	plenum	control	0	r2	10	5	15
+MEAM1	MEAM1	Laboratory	plenum	control	0	r3	13	2	15
+MEAM1	MEAM1	Laboratory	plenum	control	0	r4	14	1	15
+MEAM1	MEAM1	Laboratory	plenum	dose	0.31	r1	11	4	15
+MEAM1	MEAM1	Laboratory	plenum	dose	0.31	r2	12	3	15
+MEAM1	MEAM1	Laboratory	plenum	dose	0.31	r3	13	2	15
+MEAM1	MEAM1	Laboratory	plenum	dose	0.31	r4	10	5	15
+MEAM1	MEAM1	Laboratory	plenum	dose	0.61	r1	7	7	14
+MEAM1	MEAM1	Laboratory	plenum	dose	0.61	r2	6	9	15
+MEAM1	MEAM1	Laboratory	plenum	dose	0.61	r3	11	4	15
+MEAM1	MEAM1	Laboratory	plenum	dose	0.61	r4	6	9	15
+MEAM1	MEAM1	Laboratory	plenum	dose	1.22	r1	7	8	15
+MEAM1	MEAM1	Laboratory	plenum	dose	1.22	r2	7	8	15
+MEAM1	MEAM1	Laboratory	plenum	dose	1.22	r3	4	11	15
+MEAM1	MEAM1	Laboratory	plenum	dose	1.22	r4	7	8	15
+MEAM1	MEAM1	Laboratory	plenum	dose	2.44	r1	6	9	15
+MEAM1	MEAM1	Laboratory	plenum	dose	2.44	r2	6	9	15
+MEAM1	MEAM1	Laboratory	plenum	dose	2.44	r3	6	9	15
+MEAM1	MEAM1	Laboratory	plenum	dose	2.44	r4	4	11	15
+P56	MEAM1	Open field	supreme	control	0	r1	14	1	15
+P56	MEAM1	Open field	supreme	control	0	r2	13	2	15
+P56	MEAM1	Open field	supreme	control	0	r3	14	1	15
+P56	MEAM1	Open field	supreme	control	0	r4	15	0	15
+P56	MEAM1	Open field	supreme	dose	4	r1	14	0	14
+P56	MEAM1	Open field	supreme	dose	4	r2	15	1	16
+P56	MEAM1	Open field	supreme	dose	4	r3	13	2	15
+P56	MEAM1	Open field	supreme	dose	4	r4	14	1	15
+P56	MEAM1	Open field	supreme	dose	16	r1	14	1	15
+P56	MEAM1	Open field	supreme	dose	16	r2	14	1	15
+P56	MEAM1	Open field	supreme	dose	16	r3	14	1	15
+P56	MEAM1	Open field	supreme	dose	16	r4	15	0	15
+P56	MEAM1	Open field	supreme	dose	64	r1	12	4	16
+P56	MEAM1	Open field	supreme	dose	64	r2	9	6	15
+P56	MEAM1	Open field	supreme	dose	64	r3	9	6	15
+P56	MEAM1	Open field	supreme	dose	64	r4	14	1	15
+P56	MEAM1	Open field	supreme	dose	256	r1	7	8	15
+P56	MEAM1	Open field	supreme	dose	256	r2	10	5	15
+P56	MEAM1	Open field	supreme	dose	256	r3	7	7	14
+P56	MEAM1	Open field	supreme	dose	256	r4	6	9	15
+P56	MEAM1	Open field	supreme	dose	1024	r1	1	14	15
+P56	MEAM1	Open field	supreme	dose	1024	r2	3	12	15
+P56	MEAM1	Open field	supreme	dose	1024	r3	1	13	14
+P56	MEAM1	Open field	supreme	dose	1024	r4	4	13	17
+P56	MEAM1	Open field	supreme	dose	4096	r1	0	15	15
+P56	MEAM1	Open field	supreme	dose	4096	r2	0	15	15
+P56	MEAM1	Open field	supreme	dose	4096	r3	0	15	15
+P56	MEAM1	Open field	supreme	dose	4096	r4	1	14	15
+P55	MEAM1	Greenhouse	supreme	control	0	r1	12	3	15
+P55	MEAM1	Greenhouse	supreme	control	0	r2	15	0	15
+P55	MEAM1	Greenhouse	supreme	control	0	r3	14	2	16
+P55	MEAM1	Greenhouse	supreme	control	0	r4	15	0	15
+P55	MEAM1	Greenhouse	supreme	dose	4	r1	13	2	15
+P55	MEAM1	Greenhouse	supreme	dose	4	r2	13	2	15
+P55	MEAM1	Greenhouse	supreme	dose	4	r3	14	1	15
+P55	MEAM1	Greenhouse	supreme	dose	4	r4	13	2	15
+P55	MEAM1	Greenhouse	supreme	dose	16	r1	3	12	15
+P55	MEAM1	Greenhouse	supreme	dose	16	r2	7	8	15
+P55	MEAM1	Greenhouse	supreme	dose	16	r3	3	12	15
+P55	MEAM1	Greenhouse	supreme	dose	16	r4	3	12	15
+P55	MEAM1	Greenhouse	supreme	dose	64	r1	4	11	15
+P55	MEAM1	Greenhouse	supreme	dose	64	r2	1	14	15
+P55	MEAM1	Greenhouse	supreme	dose	64	r3	3	12	15
+P55	MEAM1	Greenhouse	supreme	dose	64	r4	0	15	15
+P55	MEAM1	Greenhouse	supreme	dose	256	r1	0	15	15
+P55	MEAM1	Greenhouse	supreme	dose	256	r2	0	15	15
+P55	MEAM1	Greenhouse	supreme	dose	256	r3	0	15	15
+P55	MEAM1	Greenhouse	supreme	dose	256	r4	0	15	15
+P55	MEAM1	Greenhouse	supreme	dose	1024	r1	0	15	15
+P55	MEAM1	Greenhouse	supreme	dose	1024	r2	0	15	15
+P55	MEAM1	Greenhouse	supreme	dose	1024	r3	0	15	15
+P55	MEAM1	Greenhouse	supreme	dose	1024	r4	0	15	15
+P55	MEAM1	Greenhouse	supreme	dose	4096	r1	0	15	15
+P55	MEAM1	Greenhouse	supreme	dose	4096	r2	0	15	15
+P55	MEAM1	Greenhouse	supreme	dose	4096	r3	0	15	15
+P55	MEAM1	Greenhouse	supreme	dose	4096	r4	0	15	15
+P13	MEAM1	Greenhouse	supreme	control	0	r1	14	2	16
+P13	MEAM1	Greenhouse	supreme	control	0	r2	14	1	15
+P13	MEAM1	Greenhouse	supreme	control	0	r3	15	0	15
+P13	MEAM1	Greenhouse	supreme	control	0	r4	14	1	15
+P13	MEAM1	Greenhouse	supreme	dose	4	r1	13	1	14
+P13	MEAM1	Greenhouse	supreme	dose	4	r2	13	2	15
+P13	MEAM1	Greenhouse	supreme	dose	4	r3	14	1	15
+P13	MEAM1	Greenhouse	supreme	dose	4	r4	13	2	15
+P13	MEAM1	Greenhouse	supreme	dose	16	r1	12	3	15
+P13	MEAM1	Greenhouse	supreme	dose	16	r2	14	0	14
+P13	MEAM1	Greenhouse	supreme	dose	16	r3	14	2	16
+P13	MEAM1	Greenhouse	supreme	dose	16	r4	13	2	15
+P13	MEAM1	Greenhouse	supreme	dose	64	r1	11	4	15
+P13	MEAM1	Greenhouse	supreme	dose	64	r2	10	5	15
+P13	MEAM1	Greenhouse	supreme	dose	64	r3	11	4	15
+P13	MEAM1	Greenhouse	supreme	dose	64	r4	8	7	15
+P13	MEAM1	Greenhouse	supreme	dose	256	r1	6	9	15
+P13	MEAM1	Greenhouse	supreme	dose	256	r2	8	7	15
+P13	MEAM1	Greenhouse	supreme	dose	256	r3	7	7	14
+P13	MEAM1	Greenhouse	supreme	dose	256	r4	6	9	15
+P13	MEAM1	Greenhouse	supreme	dose	1024	r1	1	14	15
+P13	MEAM1	Greenhouse	supreme	dose	1024	r2	2	13	15
+P13	MEAM1	Greenhouse	supreme	dose	1024	r3	1	14	15
+P13	MEAM1	Greenhouse	supreme	dose	1024	r4	1	14	15
+P13	MEAM1	Greenhouse	supreme	dose	4096	r1	0	15	15
+P13	MEAM1	Greenhouse	supreme	dose	4096	r2	0	15	15
+P13	MEAM1	Greenhouse	supreme	dose	4096	r3	0	15	15
+P13	MEAM1	Greenhouse	supreme	dose	4096	r4	0	15	15
+MEAM1	MEAM1	Laboratory	supreme	control	0	r1	16	0	16
+MEAM1	MEAM1	Laboratory	supreme	control	0	r2	14	1	15
+MEAM1	MEAM1	Laboratory	supreme	control	0	r3	12	3	15
+MEAM1	MEAM1	Laboratory	supreme	control	0	r4	13	2	15
+MEAM1	MEAM1	Laboratory	supreme	dose	1	r1	7	8	15
+MEAM1	MEAM1	Laboratory	supreme	dose	1	r2	13	2	15
+MEAM1	MEAM1	Laboratory	supreme	dose	1	r3	13	2	15
+MEAM1	MEAM1	Laboratory	supreme	dose	1	r4	11	4	15
+MEAM1	MEAM1	Laboratory	supreme	dose	4	r1	11	4	15
+MEAM1	MEAM1	Laboratory	supreme	dose	4	r2	10	5	15
+MEAM1	MEAM1	Laboratory	supreme	dose	4	r3	7	8	15
+MEAM1	MEAM1	Laboratory	supreme	dose	4	r4	6	10	16
+MEAM1	MEAM1	Laboratory	supreme	dose	16	r1	0	15	15
+MEAM1	MEAM1	Laboratory	supreme	dose	16	r2	2	13	15
+MEAM1	MEAM1	Laboratory	supreme	dose	16	r3	2	13	15
+MEAM1	MEAM1	Laboratory	supreme	dose	16	r4	2	13	15
+MEAM1	MEAM1	Laboratory	supreme	dose	64	r1	1	14	15
+MEAM1	MEAM1	Laboratory	supreme	dose	64	r2	1	14	15
+MEAM1	MEAM1	Laboratory	supreme	dose	64	r3	1	14	15
+MEAM1	MEAM1	Laboratory	supreme	dose	64	r4	0	15	15
+MEAM1	MEAM1	Laboratory	supreme	dose	256	r1	2	13	15
+MEAM1	MEAM1	Laboratory	supreme	dose	256	r2	0	15	15
+MEAM1	MEAM1	Laboratory	supreme	dose	256	r3	0	15	15
+MEAM1	MEAM1	Laboratory	supreme	dose	256	r4	2	13	15
+MEAM1	MEAM1	Laboratory	supreme	dose	1024	r1	0	15	15
+MEAM1	MEAM1	Laboratory	supreme	dose	1024	r2	0	15	15
+MEAM1	MEAM1	Laboratory	supreme	dose	1024	r3	0	15	15
+MEAM1	MEAM1	Laboratory	supreme	dose	1024	r4	0	15	15
+P18	MEAM1	Greenhouse	supreme	control	0	r1	15	0	15
+P18	MEAM1	Greenhouse	supreme	control	0	r2	15	0	15
+P18	MEAM1	Greenhouse	supreme	control	0	r3	14	1	15
+P18	MEAM1	Greenhouse	supreme	control	0	r4	15	0	15
+P18	MEAM1	Greenhouse	supreme	dose	4	r1	14	1	15
+P18	MEAM1	Greenhouse	supreme	dose	4	r2	13	2	15
+P18	MEAM1	Greenhouse	supreme	dose	4	r3	13	2	15
+P18	MEAM1	Greenhouse	supreme	dose	4	r4	15	0	15
+P18	MEAM1	Greenhouse	supreme	dose	16	r1	11	4	15
+P18	MEAM1	Greenhouse	supreme	dose	16	r2	13	2	15
+P18	MEAM1	Greenhouse	supreme	dose	16	r3	16	0	16
+P18	MEAM1	Greenhouse	supreme	dose	16	r4	13	2	15
+P18	MEAM1	Greenhouse	supreme	dose	64	r1	14	1	15
+P18	MEAM1	Greenhouse	supreme	dose	64	r2	13	2	15
+P18	MEAM1	Greenhouse	supreme	dose	64	r3	10	5	15
+P18	MEAM1	Greenhouse	supreme	dose	64	r4	11	4	15
+P18	MEAM1	Greenhouse	supreme	dose	256	r1	9	6	15
+P18	MEAM1	Greenhouse	supreme	dose	256	r2	11	4	15
+P18	MEAM1	Greenhouse	supreme	dose	256	r3	8	7	15
+P18	MEAM1	Greenhouse	supreme	dose	256	r4	7	8	15
+P18	MEAM1	Greenhouse	supreme	dose	1024	r1	7	8	15
+P18	MEAM1	Greenhouse	supreme	dose	1024	r2	5	10	15
+P18	MEAM1	Greenhouse	supreme	dose	1024	r3	2	13	15
+P18	MEAM1	Greenhouse	supreme	dose	1024	r4	4	11	15
+P18	MEAM1	Greenhouse	supreme	dose	4096	r1	0	15	15
+P18	MEAM1	Greenhouse	supreme	dose	4096	r2	2	13	15
+P18	MEAM1	Greenhouse	supreme	dose	4096	r3	0	15	15
+P18	MEAM1	Greenhouse	supreme	dose	4096	r4	0	15	15
+P21	MEAM1	Greenhouse	supreme	control	0	r1	15	0	15
+P21	MEAM1	Greenhouse	supreme	control	0	r2	14	1	15
+P21	MEAM1	Greenhouse	supreme	control	0	r3	14	1	15
+P21	MEAM1	Greenhouse	supreme	control	0	r4	14	1	15
+P21	MEAM1	Greenhouse	supreme	dose	4	r1	13	2	15
+P21	MEAM1	Greenhouse	supreme	dose	4	r2	14	1	15
+P21	MEAM1	Greenhouse	supreme	dose	4	r3	12	3	15
+P21	MEAM1	Greenhouse	supreme	dose	4	r4	15	0	15
+P21	MEAM1	Greenhouse	supreme	dose	16	r1	12	4	16
+P21	MEAM1	Greenhouse	supreme	dose	16	r2	12	3	15
+P21	MEAM1	Greenhouse	supreme	dose	16	r3	12	3	15
+P21	MEAM1	Greenhouse	supreme	dose	16	r4	12	4	16
+P21	MEAM1	Greenhouse	supreme	dose	64	r1	8	7	15
+P21	MEAM1	Greenhouse	supreme	dose	64	r2	7	8	15
+P21	MEAM1	Greenhouse	supreme	dose	64	r3	9	6	15
+P21	MEAM1	Greenhouse	supreme	dose	64	r4	6	9	15
+P21	MEAM1	Greenhouse	supreme	dose	256	r1	2	13	15
+P21	MEAM1	Greenhouse	supreme	dose	256	r2	3	12	15
+P21	MEAM1	Greenhouse	supreme	dose	256	r3	5	10	15
+P21	MEAM1	Greenhouse	supreme	dose	256	r4	1	14	15
+P21	MEAM1	Greenhouse	supreme	dose	1024	r1	0	15	15
+P21	MEAM1	Greenhouse	supreme	dose	1024	r2	2	13	15
+P21	MEAM1	Greenhouse	supreme	dose	1024	r3	1	14	15
+P21	MEAM1	Greenhouse	supreme	dose	1024	r4	2	13	15
+P21	MEAM1	Greenhouse	supreme	dose	4096	r1	0	15	15
+P21	MEAM1	Greenhouse	supreme	dose	4096	r2	0	15	15
+P21	MEAM1	Greenhouse	supreme	dose	4096	r3	0	15	15
+P21	MEAM1	Greenhouse	supreme	dose	4096	r4	0	15	15
+P25	MEAM1	Greenhouse	supreme	control	0	r1	14	1	15
+P25	MEAM1	Greenhouse	supreme	control	0	r2	13	2	15
+P25	MEAM1	Greenhouse	supreme	control	0	r3	13	2	15
+P25	MEAM1	Greenhouse	supreme	control	0	r4	15	0	15
+P25	MEAM1	Greenhouse	supreme	dose	4	r1	14	1	15
+P25	MEAM1	Greenhouse	supreme	dose	4	r2	15	0	15
+P25	MEAM1	Greenhouse	supreme	dose	4	r3	11	4	15
+P25	MEAM1	Greenhouse	supreme	dose	4	r4	13	2	15
+P25	MEAM1	Greenhouse	supreme	dose	16	r1	12	3	15
+P25	MEAM1	Greenhouse	supreme	dose	16	r2	14	1	15
+P25	MEAM1	Greenhouse	supreme	dose	16	r3	13	2	15
+P25	MEAM1	Greenhouse	supreme	dose	16	r4	14	0	14
+P25	MEAM1	Greenhouse	supreme	dose	64	r1	11	4	15
+P25	MEAM1	Greenhouse	supreme	dose	64	r2	12	3	15
+P25	MEAM1	Greenhouse	supreme	dose	64	r3	15	0	15
+P25	MEAM1	Greenhouse	supreme	dose	64	r4	13	2	15
+P25	MEAM1	Greenhouse	supreme	dose	256	r1	10	5	15
+P25	MEAM1	Greenhouse	supreme	dose	256	r2	8	7	15
+P25	MEAM1	Greenhouse	supreme	dose	256	r3	10	5	15
+P25	MEAM1	Greenhouse	supreme	dose	256	r4	10	5	15
+P25	MEAM1	Greenhouse	supreme	dose	1024	r1	5	10	15
+P25	MEAM1	Greenhouse	supreme	dose	1024	r2	3	12	15
+P25	MEAM1	Greenhouse	supreme	dose	1024	r3	5	10	15
+P25	MEAM1	Greenhouse	supreme	dose	1024	r4	2	13	15
+P25	MEAM1	Greenhouse	supreme	dose	4096	r1	1	14	15
+P25	MEAM1	Greenhouse	supreme	dose	4096	r2	1	14	15
+P25	MEAM1	Greenhouse	supreme	dose	4096	r3	2	13	15
+P25	MEAM1	Greenhouse	supreme	dose	4096	r4	0	15	15
+P66	MEAM1	Field surroundings	supreme	control	0	r1	13	2	15
+P66	MEAM1	Field surroundings	supreme	control	0	r2	14	1	15
+P66	MEAM1	Field surroundings	supreme	control	0	r3	15	0	15
+P66	MEAM1	Field surroundings	supreme	control	0	r4	14	1	15
+P66	MEAM1	Field surroundings	supreme	dose	4	r1	14	2	16
+P66	MEAM1	Field surroundings	supreme	dose	4	r2	14	1	15
+P66	MEAM1	Field surroundings	supreme	dose	4	r3	15	0	15
+P66	MEAM1	Field surroundings	supreme	dose	4	r4	15	0	15
+P66	MEAM1	Field surroundings	supreme	dose	16	r1	15	0	15
+P66	MEAM1	Field surroundings	supreme	dose	16	r2	12	3	15
+P66	MEAM1	Field surroundings	supreme	dose	16	r3	11	4	15
+P66	MEAM1	Field surroundings	supreme	dose	16	r4	13	2	15
+P66	MEAM1	Field surroundings	supreme	dose	64	r1	8	6	14
+P66	MEAM1	Field surroundings	supreme	dose	64	r2	7	8	15
+P66	MEAM1	Field surroundings	supreme	dose	64	r3	6	8	14
+P66	MEAM1	Field surroundings	supreme	dose	64	r4	9	6	15
+P66	MEAM1	Field surroundings	supreme	dose	256	r1	6	9	15
+P66	MEAM1	Field surroundings	supreme	dose	256	r2	5	10	15
+P66	MEAM1	Field surroundings	supreme	dose	256	r3	3	12	15
+P66	MEAM1	Field surroundings	supreme	dose	256	r4	5	10	15
+P66	MEAM1	Field surroundings	supreme	dose	1024	r1	3	12	15
+P66	MEAM1	Field surroundings	supreme	dose	1024	r2	0	15	15
+P66	MEAM1	Field surroundings	supreme	dose	1024	r3	0	15	15
+P66	MEAM1	Field surroundings	supreme	dose	1024	r4	2	13	15
+P66	MEAM1	Field surroundings	supreme	dose	4096	r1	2	13	15
+P66	MEAM1	Field surroundings	supreme	dose	4096	r2	0	15	15
+P66	MEAM1	Field surroundings	supreme	dose	4096	r3	1	14	15
+P66	MEAM1	Field surroundings	supreme	dose	4096	r4	0	15	15
+P60MEAM1	MEAM1	Non-cultivated	supreme	control	0	r1	19	2	21
+P60MEAM1	MEAM1	Non-cultivated	supreme	dose	4	r1	22	5	27
+P60MEAM1	MEAM1	Non-cultivated	supreme	dose	16	r1	14	11	25
+P60MEAM1	MEAM1	Non-cultivated	supreme	dose	64	r1	8	18	26
+P60MEAM1	MEAM1	Non-cultivated	supreme	dose	256	r1	2	27	29
+P60MEAM1	MEAM1	Non-cultivated	supreme	dose	1024	r1	0	30	30
+P60MEAM1	MEAM1	Non-cultivated	supreme	dose	4096	r1	0	25	25
+P60IO	IO	Non-cultivated	supreme	control	0	r1	19	3	22
+P60IO	IO	Non-cultivated	supreme	dose	4	r1	3	11	14
+P60IO	IO	Non-cultivated	supreme	dose	16	r1	4	13	17
+P60IO	IO	Non-cultivated	supreme	dose	64	r1	0	11	11
+P60IO	IO	Non-cultivated	supreme	dose	256	r1	0	11	11
+P60IO	IO	Non-cultivated	supreme	dose	1024	r1	0	10	10
+P60IO	IO	Non-cultivated	supreme	dose	4096	r1	0	15	15
+P32	MEAM1	Open field	supreme	control	0	r1	13	2	15
+P32	MEAM1	Open field	supreme	control	0	r2	10	5	15
+P32	MEAM1	Open field	supreme	dose	4	r1	16	1	17
+P32	MEAM1	Open field	supreme	dose	4	r2	15	0	15
+P32	MEAM1	Open field	supreme	dose	16	r1	12	3	15
+P32	MEAM1	Open field	supreme	dose	16	r2	14	1	15
+P32	MEAM1	Open field	supreme	dose	16	r3	10	5	15
+P32	MEAM1	Open field	supreme	dose	64	r1	8	7	15
+P32	MEAM1	Open field	supreme	dose	64	r2	7	8	15
+P32	MEAM1	Open field	supreme	dose	256	r1	0	15	15
+P32	MEAM1	Open field	supreme	dose	256	r2	5	10	15
+P32	MEAM1	Open field	supreme	dose	1024	r1	0	15	15
+P32	MEAM1	Open field	supreme	dose	1024	r2	0	15	15
+P32	MEAM1	Open field	supreme	dose	4096	r1	0	15	15
+P32	MEAM1	Open field	supreme	dose	4096	r2	0	15	15
+P23	MEAM1	Field surroundings	supreme	control	0	r1	15	0	15
+P23	MEAM1	Field surroundings	supreme	control	0	r2	14	1	15
+P23	MEAM1	Field surroundings	supreme	control	0	r3	15	0	15
+P23	MEAM1	Field surroundings	supreme	dose	4	r1	15	0	15
+P23	MEAM1	Field surroundings	supreme	dose	4	r2	12	3	15
+P23	MEAM1	Field surroundings	supreme	dose	4	r3	13	2	15
+P23	MEAM1	Field surroundings	supreme	dose	16	r1	14	1	15
+P23	MEAM1	Field surroundings	supreme	dose	16	r2	11	4	15
+P23	MEAM1	Field surroundings	supreme	dose	16	r3	14	1	15
+P23	MEAM1	Field surroundings	supreme	dose	64	r1	9	6	15
+P23	MEAM1	Field surroundings	supreme	dose	64	r2	9	6	15
+P23	MEAM1	Field surroundings	supreme	dose	64	r3	11	4	15
+P23	MEAM1	Field surroundings	supreme	dose	256	r1	5	10	15
+P23	MEAM1	Field surroundings	supreme	dose	256	r2	4	11	15
+P23	MEAM1	Field surroundings	supreme	dose	256	r3	4	11	15
+P23	MEAM1	Field surroundings	supreme	dose	1024	r1	0	15	15
+P23	MEAM1	Field surroundings	supreme	dose	1024	r2	4	11	15
+P23	MEAM1	Field surroundings	supreme	dose	1024	r3	4	11	15
+P23	MEAM1	Field surroundings	supreme	dose	4096	r1	1	14	15
+P23	MEAM1	Field surroundings	supreme	dose	4096	r2	1	14	15
+P23	MEAM1	Field surroundings	supreme	dose	4096	r3	0	15	15
+P65	MEAM1	Greenhouse	supreme	control	0	r1	12	3	15
+P65	MEAM1	Greenhouse	supreme	control	0	r2	12	3	15
+P65	MEAM1	Greenhouse	supreme	control	0	r3	14	1	15
+P65	MEAM1	Greenhouse	supreme	control	0	r4	13	2	15
+P65	MEAM1	Greenhouse	supreme	dose	4	r1	13	1	14
+P65	MEAM1	Greenhouse	supreme	dose	4	r2	12	3	15
+P65	MEAM1	Greenhouse	supreme	dose	4	r3	15	1	16
+P65	MEAM1	Greenhouse	supreme	dose	4	r4	14	1	15
+P65	MEAM1	Greenhouse	supreme	dose	16	r1	14	1	15
+P65	MEAM1	Greenhouse	supreme	dose	16	r2	12	3	15
+P65	MEAM1	Greenhouse	supreme	dose	16	r3	15	0	15
+P65	MEAM1	Greenhouse	supreme	dose	16	r4	13	2	15
+P65	MEAM1	Greenhouse	supreme	dose	64	r1	8	7	15
+P65	MEAM1	Greenhouse	supreme	dose	64	r2	7	8	15
+P65	MEAM1	Greenhouse	supreme	dose	64	r3	7	8	15
+P65	MEAM1	Greenhouse	supreme	dose	64	r4	10	3	13
+P65	MEAM1	Greenhouse	supreme	dose	256	r1	5	10	15
+P65	MEAM1	Greenhouse	supreme	dose	256	r2	5	9	14
+P65	MEAM1	Greenhouse	supreme	dose	256	r3	3	12	15
+P65	MEAM1	Greenhouse	supreme	dose	256	r4	6	8	14
+P65	MEAM1	Greenhouse	supreme	dose	1024	r1	3	12	15
+P65	MEAM1	Greenhouse	supreme	dose	1024	r2	1	15	16
+P65	MEAM1	Greenhouse	supreme	dose	1024	r3	0	15	15
+P65	MEAM1	Greenhouse	supreme	dose	1024	r4	1	14	15
+P65	MEAM1	Greenhouse	supreme	dose	4096	r1	1	14	15
+P65	MEAM1	Greenhouse	supreme	dose	4096	r2	0	15	15
+P65	MEAM1	Greenhouse	supreme	dose	4096	r3	0	15	15
+P65	MEAM1	Greenhouse	supreme	dose	4096	r4	1	14	15
+P58	MEAM1	Open field	supreme	control	0	r1	13	2	15
+P58	MEAM1	Open field	supreme	control	0	r2	13	2	15
+P58	MEAM1	Open field	supreme	control	0	r3	14	1	15
+P58	MEAM1	Open field	supreme	control	0	r4	14	1	15
+P58	MEAM1	Open field	supreme	dose	4	r1	15	0	15
+P58	MEAM1	Open field	supreme	dose	4	r2	14	1	15
+P58	MEAM1	Open field	supreme	dose	4	r3	13	2	15
+P58	MEAM1	Open field	supreme	dose	4	r4	14	1	15
+P58	MEAM1	Open field	supreme	dose	16	r1	13	3	16
+P58	MEAM1	Open field	supreme	dose	16	r2	14	1	15
+P58	MEAM1	Open field	supreme	dose	16	r3	13	2	15
+P58	MEAM1	Open field	supreme	dose	16	r4	13	2	15
+P58	MEAM1	Open field	supreme	dose	64	r1	11	4	15
+P58	MEAM1	Open field	supreme	dose	64	r2	11	4	15
+P58	MEAM1	Open field	supreme	dose	64	r3	10	5	15
+P58	MEAM1	Open field	supreme	dose	64	r4	11	4	15
+P58	MEAM1	Open field	supreme	dose	256	r1	7	8	15
+P58	MEAM1	Open field	supreme	dose	256	r2	8	7	15
+P58	MEAM1	Open field	supreme	dose	256	r3	5	10	15
+P58	MEAM1	Open field	supreme	dose	256	r4	5	10	15
+P58	MEAM1	Open field	supreme	dose	1024	r1	0	15	15
+P58	MEAM1	Open field	supreme	dose	1024	r2	0	15	15
+P58	MEAM1	Open field	supreme	dose	1024	r3	0	15	15
+P58	MEAM1	Open field	supreme	dose	1024	r4	1	14	15
+P58	MEAM1	Open field	supreme	dose	4096	r1	0	16	16
+P58	MEAM1	Open field	supreme	dose	4096	r2	0	15	15
+P58	MEAM1	Open field	supreme	dose	4096	r3	0	15	15
+P58	MEAM1	Open field	supreme	dose	4096	r4	0	15	15
+P31	MEAM1	Open field	supreme	control	0	r1	12	3	15
+P31	MEAM1	Open field	supreme	control	0	r2	13	2	15
+P31	MEAM1	Open field	supreme	control	0	r3	15	0	15
+P31	MEAM1	Open field	supreme	control	0	r4	13	2	15
+P31	MEAM1	Open field	supreme	dose	4	r1	13	2	15
+P31	MEAM1	Open field	supreme	dose	4	r2	13	2	15
+P31	MEAM1	Open field	supreme	dose	4	r3	12	3	15
+P31	MEAM1	Open field	supreme	dose	4	r4	13	2	15
+P31	MEAM1	Open field	supreme	dose	16	r1	13	1	14
+P31	MEAM1	Open field	supreme	dose	16	r2	10	5	15
+P31	MEAM1	Open field	supreme	dose	16	r3	12	3	15
+P31	MEAM1	Open field	supreme	dose	16	r4	11	4	15
+P31	MEAM1	Open field	supreme	dose	64	r1	8	7	15
+P31	MEAM1	Open field	supreme	dose	64	r2	7	8	15
+P31	MEAM1	Open field	supreme	dose	64	r3	6	9	15
+P31	MEAM1	Open field	supreme	dose	64	r4	5	10	15
+P31	MEAM1	Open field	supreme	dose	256	r1	1	14	15
+P31	MEAM1	Open field	supreme	dose	256	r2	0	15	15
+P31	MEAM1	Open field	supreme	dose	256	r3	3	12	15
+P31	MEAM1	Open field	supreme	dose	256	r4	2	13	15
+P31	MEAM1	Open field	supreme	dose	1024	r1	1	14	15
+P31	MEAM1	Open field	supreme	dose	1024	r2	0	15	15
+P31	MEAM1	Open field	supreme	dose	1024	r3	1	14	15
+P31	MEAM1	Open field	supreme	dose	1024	r4	0	15	15
+P31	MEAM1	Open field	supreme	dose	4096	r1	0	15	15
+P31	MEAM1	Open field	supreme	dose	4096	r2	0	15	15
+P31	MEAM1	Open field	supreme	dose	4096	r3	0	15	15
+P31	MEAM1	Open field	supreme	dose	4096	r4	0	15	15
+IO	IO	Laboratory	plenum	control	0	r1	14	1	15
+IO	IO	Laboratory	plenum	control	0	r2	13	2	15
+IO	IO	Laboratory	plenum	control	0	r3	13	2	15
+IO	IO	Laboratory	plenum	control	0	r4	14	1	15
+IO	IO	Laboratory	plenum	dose	0.5	r1	12	3	15
+IO	IO	Laboratory	plenum	dose	0.5	r2	11	4	15
+IO	IO	Laboratory	plenum	dose	0.5	r3	12	3	15
+IO	IO	Laboratory	plenum	dose	0.5	r4	12	3	15
+IO	IO	Laboratory	plenum	dose	2	r1	10	5	15
+IO	IO	Laboratory	plenum	dose	2	r2	8	7	15
+IO	IO	Laboratory	plenum	dose	2	r3	8	7	15
+IO	IO	Laboratory	plenum	dose	2	r4	7	8	15
+IO	IO	Laboratory	plenum	dose	8	r1	2	13	15
+IO	IO	Laboratory	plenum	dose	8	r2	4	11	15
+IO	IO	Laboratory	plenum	dose	8	r3	2	13	15
+IO	IO	Laboratory	plenum	dose	8	r4	1	14	15
+IO	IO	Laboratory	plenum	dose	32	r1	0	15	15
+IO	IO	Laboratory	plenum	dose	32	r2	0	15	15
+IO	IO	Laboratory	plenum	dose	32	r3	0	15	15
+IO	IO	Laboratory	plenum	dose	32	r4	0	15	15
+IO	IO	Laboratory	plenum	dose	128	r1	0	15	15
+IO	IO	Laboratory	plenum	dose	128	r2	0	15	15
+IO	IO	Laboratory	plenum	dose	128	r3	0	15	15
+IO	IO	Laboratory	plenum	dose	128	r4	0	15	15
+IO	IO	Laboratory	plenum	dose	512	r1	0	15	15
+IO	IO	Laboratory	plenum	dose	512	r2	0	15	15
+IO	IO	Laboratory	plenum	dose	512	r3	0	15	15
+IO	IO	Laboratory	plenum	dose	512	r4	0	15	15
+P64MEAM1	MEAM1	Non-cultivated	plenum	control	0	r1	25	1	26
+P64MEAM1	MEAM1	Non-cultivated	plenum	dose	0.5	r1	17	4	21
+P64MEAM1	MEAM1	Non-cultivated	plenum	dose	2	r1	14	5	19
+P64MEAM1	MEAM1	Non-cultivated	plenum	dose	8	r1	19	3	22
+P64MEAM1	MEAM1	Non-cultivated	plenum	dose	32	r1	13	10	23
+P64MEAM1	MEAM1	Non-cultivated	plenum	dose	128	r1	15	2	17
+P64MEAM1	MEAM1	Non-cultivated	plenum	dose	512	r1	8	9	17
+P64IO	IO	Non-cultivated	plenum	control	0	r1	14	5	19
+P64IO	IO	Non-cultivated	plenum	dose	0.5	r1	11	19	30
+P64IO	IO	Non-cultivated	plenum	dose	2	r1	7	25	32
+P64IO	IO	Non-cultivated	plenum	dose	8	r1	0	28	28
+P64IO	IO	Non-cultivated	plenum	dose	32	r1	1	30	31
+P64IO	IO	Non-cultivated	plenum	dose	128	r1	1	38	39
+P64IO	IO	Non-cultivated	plenum	dose	512	r1	0	35	35
+P31	MEAM1	Open field	plenum	control	0	r1	14	1	15
+P31	MEAM1	Open field	plenum	control	0	r2	12	3	15
+P31	MEAM1	Open field	plenum	control	0	r3	14	1	15
+P31	MEAM1	Open field	plenum	control	0	r4	13	2	15
+P31	MEAM1	Open field	plenum	dose	9.77	r1	12	3	15
+P31	MEAM1	Open field	plenum	dose	9.77	r2	13	2	15
+P31	MEAM1	Open field	plenum	dose	9.77	r3	13	2	15
+P31	MEAM1	Open field	plenum	dose	9.77	r4	10	5	15
+P31	MEAM1	Open field	plenum	dose	39.06	r1	11	4	15
+P31	MEAM1	Open field	plenum	dose	39.06	r2	12	3	15
+P31	MEAM1	Open field	plenum	dose	39.06	r3	8	7	15
+P31	MEAM1	Open field	plenum	dose	39.06	r4	11	4	15
+P31	MEAM1	Open field	plenum	dose	156.25	r1	10	5	15
+P31	MEAM1	Open field	plenum	dose	156.25	r2	14	1	15
+P31	MEAM1	Open field	plenum	dose	156.25	r3	7	8	15
+P31	MEAM1	Open field	plenum	dose	156.25	r4	7	8	15
+P31	MEAM1	Open field	plenum	dose	625	r1	7	8	15
+P31	MEAM1	Open field	plenum	dose	625	r2	9	6	15
+P31	MEAM1	Open field	plenum	dose	625	r3	10	5	15
+P31	MEAM1	Open field	plenum	dose	625	r4	10	5	15
+P31	MEAM1	Open field	plenum	dose	2500	r1	9	6	15
+P31	MEAM1	Open field	plenum	dose	2500	r2	8	7	15
+P31	MEAM1	Open field	plenum	dose	2500	r3	11	4	15
+P31	MEAM1	Open field	plenum	dose	2500	r4	8	7	15
+P31	MEAM1	Open field	plenum	dose	10000	r1	7	8	15
+P31	MEAM1	Open field	plenum	dose	10000	r2	7	8	15
+P31	MEAM1	Open field	plenum	dose	10000	r3	9	6	15
+P31	MEAM1	Open field	plenum	dose	10000	r4	8	7	15
+P18	MEAM1	Greenhouse	plenum	control	0	r1	12	3	15
+P18	MEAM1	Greenhouse	plenum	control	0	r2	13	2	15
+P18	MEAM1	Greenhouse	plenum	control	0	r3	13	2	15
+P18	MEAM1	Greenhouse	plenum	control	0	r4	14	1	15
+P18	MEAM1	Greenhouse	plenum	dose	9.77	r1	10	5	15
+P18	MEAM1	Greenhouse	plenum	dose	9.77	r2	12	3	15
+P18	MEAM1	Greenhouse	plenum	dose	9.77	r3	12	3	15
+P18	MEAM1	Greenhouse	plenum	dose	9.77	r4	12	3	15
+P18	MEAM1	Greenhouse	plenum	dose	39.06	r1	12	3	15
+P18	MEAM1	Greenhouse	plenum	dose	39.06	r2	12	3	15
+P18	MEAM1	Greenhouse	plenum	dose	39.06	r3	10	5	15
+P18	MEAM1	Greenhouse	plenum	dose	39.06	r4	9	6	15
+P18	MEAM1	Greenhouse	plenum	dose	156.25	r1	12	3	15
+P18	MEAM1	Greenhouse	plenum	dose	156.25	r2	10	5	15
+P18	MEAM1	Greenhouse	plenum	dose	156.25	r3	12	3	15
+P18	MEAM1	Greenhouse	plenum	dose	156.25	r4	14	1	15
+P18	MEAM1	Greenhouse	plenum	dose	625	r1	9	6	15
+P18	MEAM1	Greenhouse	plenum	dose	625	r2	11	4	15
+P18	MEAM1	Greenhouse	plenum	dose	625	r3	11	4	15
+P18	MEAM1	Greenhouse	plenum	dose	625	r4	12	3	15
+P18	MEAM1	Greenhouse	plenum	dose	2500	r1	13	2	15
+P18	MEAM1	Greenhouse	plenum	dose	2500	r2	15	0	15
+P18	MEAM1	Greenhouse	plenum	dose	2500	r3	9	6	15
+P18	MEAM1	Greenhouse	plenum	dose	2500	r4	12	3	15
+P18	MEAM1	Greenhouse	plenum	dose	10000	r1	2	13	15
+P18	MEAM1	Greenhouse	plenum	dose	10000	r2	7	8	15
+P18	MEAM1	Greenhouse	plenum	dose	10000	r3	9	6	15
+P18	MEAM1	Greenhouse	plenum	dose	10000	r4	5	10	15
+P58	MEAM1	Open field	plenum	control	0	r1	13	2	15
+P58	MEAM1	Open field	plenum	control	0	r2	13	2	15
+P58	MEAM1	Open field	plenum	control	0	r3	14	1	15
+P58	MEAM1	Open field	plenum	control	0	r4	13	2	15
+P58	MEAM1	Open field	plenum	dose	9.77	r1	12	3	15
+P58	MEAM1	Open field	plenum	dose	9.77	r2	11	4	15
+P58	MEAM1	Open field	plenum	dose	9.77	r3	11	4	15
+P58	MEAM1	Open field	plenum	dose	9.77	r4	11	4	15
+P58	MEAM1	Open field	plenum	dose	39.06	r1	11	4	15
+P58	MEAM1	Open field	plenum	dose	39.06	r2	11	4	15
+P58	MEAM1	Open field	plenum	dose	39.06	r3	10	5	15
+P58	MEAM1	Open field	plenum	dose	39.06	r4	12	3	15
+P58	MEAM1	Open field	plenum	dose	156.25	r1	15	0	15
+P58	MEAM1	Open field	plenum	dose	156.25	r2	12	3	15
+P58	MEAM1	Open field	plenum	dose	156.25	r3	11	4	15
+P58	MEAM1	Open field	plenum	dose	156.25	r4	9	6	15
+P58	MEAM1	Open field	plenum	dose	625	r1	12	3	15
+P58	MEAM1	Open field	plenum	dose	625	r2	8	7	15
+P58	MEAM1	Open field	plenum	dose	625	r3	10	5	15
+P58	MEAM1	Open field	plenum	dose	625	r4	7	8	15
+P58	MEAM1	Open field	plenum	dose	2500	r1	11	4	15
+P58	MEAM1	Open field	plenum	dose	2500	r2	12	3	15
+P58	MEAM1	Open field	plenum	dose	2500	r3	10	5	15
+P58	MEAM1	Open field	plenum	dose	2500	r4	10	5	15
+P58	MEAM1	Open field	plenum	dose	10000	r1	12	3	15
+P58	MEAM1	Open field	plenum	dose	10000	r2	8	7	15
+P58	MEAM1	Open field	plenum	dose	10000	r3	8	7	15
+P58	MEAM1	Open field	plenum	dose	10000	r4	6	9	15
+P60MEAM1	MEAM1	Non-cultivated	plenum	control	0	r1	26	0	26
+P60MEAM1	MEAM1	Non-cultivated	plenum	dose	9.77	r1	21	6	27
+P60MEAM1	MEAM1	Non-cultivated	plenum	dose	156.25	r1	16	5	21
+P60MEAM1	MEAM1	Non-cultivated	plenum	dose	625	r1	16	1	17
+P60MEAM1	MEAM1	Non-cultivated	plenum	dose	2500	r1	13	2	15
+P60MEAM1	MEAM1	Non-cultivated	plenum	dose	10000	r1	11	12	23
+P32	MEAM1	Open field	plenum	control	0	r1	14	1	15
+P32	MEAM1	Open field	plenum	control	0	r2	12	3	15
+P32	MEAM1	Open field	plenum	control	0	r3	15	0	15
+P32	MEAM1	Open field	plenum	control	0	r4	14	1	15
+P32	MEAM1	Open field	plenum	dose	9.77	r1	15	0	15
+P32	MEAM1	Open field	plenum	dose	9.77	r2	12	3	15
+P32	MEAM1	Open field	plenum	dose	9.77	r3	12	3	15
+P32	MEAM1	Open field	plenum	dose	39.06	r1	13	2	15
+P32	MEAM1	Open field	plenum	dose	39.06	r2	13	2	15
+P32	MEAM1	Open field	plenum	dose	39.06	r3	13	2	15
+P32	MEAM1	Open field	plenum	dose	156.25	r1	13	2	15
+P32	MEAM1	Open field	plenum	dose	156.25	r2	14	1	15
+P32	MEAM1	Open field	plenum	dose	156.25	r3	15	0	15
+P32	MEAM1	Open field	plenum	dose	156.25	r4	13	2	15
+P32	MEAM1	Open field	plenum	dose	625	r1	15	0	15
+P32	MEAM1	Open field	plenum	dose	625	r2	14	1	15
+P32	MEAM1	Open field	plenum	dose	625	r3	14	1	15
+P32	MEAM1	Open field	plenum	dose	625	r4	15	0	15
+P32	MEAM1	Open field	plenum	dose	2500	r1	11	4	15
+P32	MEAM1	Open field	plenum	dose	2500	r2	13	2	15
+P32	MEAM1	Open field	plenum	dose	2500	r3	12	3	15
+P32	MEAM1	Open field	plenum	dose	2500	r4	11	4	15
+P32	MEAM1	Open field	plenum	dose	10000	r1	13	2	15
+P32	MEAM1	Open field	plenum	dose	10000	r2	12	3	15
+P32	MEAM1	Open field	plenum	dose	10000	r3	16	0	16
+P32	MEAM1	Open field	plenum	dose	10000	r4	13	2	15
+MEAM1	MEAM1	Laboratory	plenum	control	0	r1	12	3	15
+MEAM1	MEAM1	Laboratory	plenum	control	0	r2	15	0	15
+MEAM1	MEAM1	Laboratory	plenum	control	0	r3	15	0	15
+MEAM1	MEAM1	Laboratory	plenum	control	0	r4	14	1	15
+MEAM1	MEAM1	Laboratory	plenum	dose	0.31	r1	14	1	15
+MEAM1	MEAM1	Laboratory	plenum	dose	0.31	r2	10	5	15
+MEAM1	MEAM1	Laboratory	plenum	dose	0.31	r3	11	4	15
+MEAM1	MEAM1	Laboratory	plenum	dose	0.31	r4	13	2	15
+MEAM1	MEAM1	Laboratory	plenum	dose	0.61	r1	9	6	15
+MEAM1	MEAM1	Laboratory	plenum	dose	0.61	r2	11	4	15
+MEAM1	MEAM1	Laboratory	plenum	dose	0.61	r3	10	5	15
+MEAM1	MEAM1	Laboratory	plenum	dose	0.61	r4	8	7	15
+MEAM1	MEAM1	Laboratory	plenum	dose	1.22	r1	5	10	15
+MEAM1	MEAM1	Laboratory	plenum	dose	1.22	r2	7	8	15
+MEAM1	MEAM1	Laboratory	plenum	dose	1.22	r3	7	8	15
+MEAM1	MEAM1	Laboratory	plenum	dose	1.22	r4	7	8	15
+MEAM1	MEAM1	Laboratory	plenum	dose	2.44	r1	2	13	15
+MEAM1	MEAM1	Laboratory	plenum	dose	2.44	r2	6	9	15
+MEAM1	MEAM1	Laboratory	plenum	dose	2.44	r3	3	12	15
+MEAM1	MEAM1	Laboratory	plenum	dose	2.44	r4	4	11	15
+MEAM1	MEAM1	Laboratory	plenum	dose	9.77	r1	2	13	15
+MEAM1	MEAM1	Laboratory	plenum	dose	9.77	r2	2	13	15
+MEAM1	MEAM1	Laboratory	plenum	dose	9.77	r3	1	14	15
+MEAM1	MEAM1	Laboratory	plenum	dose	9.77	r4	0	15	15
+MEAM1	MEAM1	Laboratory	plenum	dose	156.25	r1	0	15	15
+MEAM1	MEAM1	Laboratory	plenum	dose	156.25	r2	0	15	15
+MEAM1	MEAM1	Laboratory	plenum	dose	156.25	r3	0	15	15
+MEAM1	MEAM1	Laboratory	plenum	dose	156.25	r4	0	15	15
+P65	MEAM1	Greenhouse	plenum	control	0	r1	14	1	15
+P65	MEAM1	Greenhouse	plenum	control	0	r2	13	2	15
+P65	MEAM1	Greenhouse	plenum	control	0	r3	12	3	15
+P65	MEAM1	Greenhouse	plenum	control	0	r4	14	1	15
+P65	MEAM1	Greenhouse	plenum	dose	9.77	r1	13	2	15
+P65	MEAM1	Greenhouse	plenum	dose	9.77	r2	15	0	15
+P65	MEAM1	Greenhouse	plenum	dose	9.77	r3	15	0	15
+P65	MEAM1	Greenhouse	plenum	dose	9.77	r4	12	3	15
+P65	MEAM1	Greenhouse	plenum	dose	39.06	r1	9	6	15
+P65	MEAM1	Greenhouse	plenum	dose	39.06	r2	10	5	15
+P65	MEAM1	Greenhouse	plenum	dose	39.06	r3	11	5	16
+P65	MEAM1	Greenhouse	plenum	dose	39.06	r4	14	1	15
+P65	MEAM1	Greenhouse	plenum	dose	156.25	r1	8	7	15
+P65	MEAM1	Greenhouse	plenum	dose	156.25	r2	11	4	15
+P65	MEAM1	Greenhouse	plenum	dose	156.25	r3	10	5	15
+P65	MEAM1	Greenhouse	plenum	dose	156.25	r4	12	3	15
+P65	MEAM1	Greenhouse	plenum	dose	625	r1	9	6	15
+P65	MEAM1	Greenhouse	plenum	dose	625	r2	11	4	15
+P65	MEAM1	Greenhouse	plenum	dose	625	r3	9	6	15
+P65	MEAM1	Greenhouse	plenum	dose	625	r4	11	4	15
+P65	MEAM1	Greenhouse	plenum	dose	2500	r1	11	4	15
+P65	MEAM1	Greenhouse	plenum	dose	2500	r2	12	3	15
+P65	MEAM1	Greenhouse	plenum	dose	2500	r3	9	6	15
+P65	MEAM1	Greenhouse	plenum	dose	2500	r4	10	5	15
+P65	MEAM1	Greenhouse	plenum	dose	10000	r1	10	5	15
+P65	MEAM1	Greenhouse	plenum	dose	10000	r2	11	4	15
+P65	MEAM1	Greenhouse	plenum	dose	10000	r3	5	10	15
+P65	MEAM1	Greenhouse	plenum	dose	10000	r4	10	5	15
+P66	MEAM1	Field surroundings	plenum	control	0	r1	13	2	15
+P66	MEAM1	Field surroundings	plenum	control	0	r2	13	2	15
+P66	MEAM1	Field surroundings	plenum	control	0	r3	14	1	15
+P66	MEAM1	Field surroundings	plenum	control	0	r4	13	2	15
+P66	MEAM1	Field surroundings	plenum	dose	9.77	r1	14	1	15
+P66	MEAM1	Field surroundings	plenum	dose	9.77	r2	15	0	15
+P66	MEAM1	Field surroundings	plenum	dose	9.77	r3	12	3	15
+P66	MEAM1	Field surroundings	plenum	dose	9.77	r4	12	3	15
+P66	MEAM1	Field surroundings	plenum	dose	39.06	r1	15	1	16
+P66	MEAM1	Field surroundings	plenum	dose	39.06	r2	15	0	15
+P66	MEAM1	Field surroundings	plenum	dose	39.06	r3	12	2	14
+P66	MEAM1	Field surroundings	plenum	dose	39.06	r4	9	6	15
+P66	MEAM1	Field surroundings	plenum	dose	156.25	r1	14	1	15
+P66	MEAM1	Field surroundings	plenum	dose	156.25	r2	13	2	15
+P66	MEAM1	Field surroundings	plenum	dose	156.25	r3	15	0	15
+P66	MEAM1	Field surroundings	plenum	dose	156.25	r4	13	2	15
+P66	MEAM1	Field surroundings	plenum	dose	625	r1	11	4	15
+P66	MEAM1	Field surroundings	plenum	dose	625	r2	11	4	15
+P66	MEAM1	Field surroundings	plenum	dose	625	r3	12	3	15
+P66	MEAM1	Field surroundings	plenum	dose	625	r4	10	5	15
+P66	MEAM1	Field surroundings	plenum	dose	2500	r1	15	0	15
+P66	MEAM1	Field surroundings	plenum	dose	2500	r2	11	4	15
+P66	MEAM1	Field surroundings	plenum	dose	2500	r3	10	5	15
+P66	MEAM1	Field surroundings	plenum	dose	2500	r4	10	5	15
+P66	MEAM1	Field surroundings	plenum	dose	10000	r1	2	13	15
+P66	MEAM1	Field surroundings	plenum	dose	10000	r2	11	4	15
+P66	MEAM1	Field surroundings	plenum	dose	10000	r3	3	12	15
+P66	MEAM1	Field surroundings	plenum	dose	10000	r4	14	1	15
+P23	MEAM1	Field surroundings	plenum	control	0	r1	15	0	15
+P23	MEAM1	Field surroundings	plenum	control	0	r2	13	2	15
+P23	MEAM1	Field surroundings	plenum	control	0	r3	14	1	15
+P23	MEAM1	Field surroundings	plenum	control	0	r4	12	3	15
+P23	MEAM1	Field surroundings	plenum	dose	9.77	r1	16	0	16
+P23	MEAM1	Field surroundings	plenum	dose	9.77	r2	12	3	15
+P23	MEAM1	Field surroundings	plenum	dose	9.77	r3	15	0	15
+P23	MEAM1	Field surroundings	plenum	dose	9.77	r4	15	0	15
+P23	MEAM1	Field surroundings	plenum	dose	39.06	r1	13	2	15
+P23	MEAM1	Field surroundings	plenum	dose	39.06	r2	13	2	15
+P23	MEAM1	Field surroundings	plenum	dose	39.06	r3	13	2	15
+P23	MEAM1	Field surroundings	plenum	dose	39.06	r4	14	1	15
+P23	MEAM1	Field surroundings	plenum	dose	156.25	r1	11	4	15
+P23	MEAM1	Field surroundings	plenum	dose	156.25	r2	14	1	15
+P23	MEAM1	Field surroundings	plenum	dose	156.25	r3	13	2	15
+P23	MEAM1	Field surroundings	plenum	dose	156.25	r4	14	1	15
+P23	MEAM1	Field surroundings	plenum	dose	625	r1	13	2	15
+P23	MEAM1	Field surroundings	plenum	dose	625	r2	10	5	15
+P23	MEAM1	Field surroundings	plenum	dose	625	r3	14	1	15
+P23	MEAM1	Field surroundings	plenum	dose	625	r4	13	2	15
+P23	MEAM1	Field surroundings	plenum	dose	2500	r1	10	5	15
+P23	MEAM1	Field surroundings	plenum	dose	2500	r2	9	6	15
+P23	MEAM1	Field surroundings	plenum	dose	2500	r3	12	3	15
+P23	MEAM1	Field surroundings	plenum	dose	2500	r4	12	3	15
+P23	MEAM1	Field surroundings	plenum	dose	10000	r1	12	3	15
+P23	MEAM1	Field surroundings	plenum	dose	10000	r2	15	0	15
+P23	MEAM1	Field surroundings	plenum	dose	10000	r3	11	4	15
+P23	MEAM1	Field surroundings	plenum	dose	10000	r4	11	4	15
