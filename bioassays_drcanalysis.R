@@ -41,7 +41,7 @@ for (j in 1:length(SAlist)) {
          REZSA<-data.frame(pesticide=SAlist[j],
                            population_ID=as.character(OBP$population_ID),
                            species=as.character(OBP$species),
-                           parameter=c("LC50"),
+                           parameter=c("LD50"),
                            estimate=paste(">",max(data_subSA$dose),
                                           sep=""),
                            SD=NA,t_value=NA,p_value=NA)
@@ -83,7 +83,7 @@ for (j in 1:length(SAlist)) {
                              c("pesticide"=SAlist[j],
                                "population_ID"=POPlist[i],
                                "species"=as.character(data.temp$species[1]),
-                               "parameter"="LC50",
+                               "parameter"="LD50",
                                "estimate"=summary(temp.m1)$coefficients[3,1],
                                "SD"=summary(temp.m1)$coefficients[3,2],
                                "t_value"=summary(temp.m1)$coefficients[3,3],
@@ -93,11 +93,34 @@ for (j in 1:length(SAlist)) {
     }} else {
       REZSA<-REZSA
     }
-  CompRez<-rbind(CompRez,REZSA)
+  CompRez<-rbind(CompRez,REZSA,stringsAsFactors=FALSE)
 }
 
+#the regression for the P18 population for the plenum SA is computaionally
+#singular, so the results for that population is added independently
+data.temp<-gamme[gamme$population_ID=="P18" & gamme$pesticide=="plenum",]
+temp.m1<-drm(dead/total~dose,
+             weights=total,
+             data=data.temp,
+             fct=LN.3u(),
+             type="binomial")
+tempx<-rbind(c("pesticide"="plenum","population_ID"="P18",
+                 "species"="MEAM1","parameter"="slope",
+                 "estimate"=as.numeric(temp.m1$coefficients[1]),"SD"=NA,
+                 "t_value"=NA,"p_value"=NA),
+               c("pesticide"="plenum","population_ID"="P18",
+                 "species"="MEAM1","parameter"="lower",
+                 "estimate"=as.numeric(temp.m1$coefficients[2]),"SD"=NA,
+                 "t_value"=NA,"p_value"=NA),
+               c("pesticide"="plenum","population_ID"="P18",
+                 "species"="MEAM1","parameter"="LD50",
+                 "estimate"=as.numeric(temp.m1$coefficients[3]),"SD"=NA,
+                 "t_value"=NA,"p_value"=NA)
+               )
+CompRez<-rbind(CompRez,tempx)
+
 #CompRez include SD, t-value and p-value, so we build a simplified file
-sCompRez<-CompRez[CompRez$parameter=="LC50",c(1:5)]
+sCompRez<-CompRez[CompRez$parameter=="LD50",c(1:5)]
 sCompRez$estimate<-as.numeric(as.character(sCompRez$estimate))
 #we assign a high value to the population for which LD50 estimation 
 #wasn't possible
@@ -138,7 +161,7 @@ write.table(sCompRez, file="output/results_bemisia.txt",
 
 #a plot of the distribution of the LD50 of the different species
 plot(main="Estimated Lethal Dose 50 for the tested populations",
-     sCompRez$estimate,log="y",las=1,ylab="LC50 estimate (mg/L)",
+     sCompRez$estimate,log="y",las=1,ylab="LD50 estimate (mg/L)",
      col=sCompRez$species,pch=19,cex=2,cex.main=2,ylim=c(0.1,200000))
 abline(v=16.5,lty=2,lwd=4)
 legend("bottomright",c("MEAM1","IO"),pch=19,cex=1.5,col=c(1,2))
