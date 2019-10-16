@@ -57,7 +57,7 @@ Alizée Taquet wrote the first draft of **bioassays_drcanalysis.R** script with 
 
 
 ## Citation
-You will hopefully soon be able to cite the related study as follow: 
+You can cite cite the related study as follow: 
 + Taquet A., Delatte H., Barrès B., Simiand C., Grondin M. and Jourdan-Pineau H. [Insecticide resistance and fitness cost in *Bemisia tabaci* (Hemiptera: Aleyrodidae) invasive and resident species in La Réunion Island. *Pest Management Science*.](https://onlinelibrary.wiley.com/doi/abs/10.1002/ps.5633)
 
 If you want to use (some of) the code found on this page or if you want to cite this repository: 
