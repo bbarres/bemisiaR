@@ -2,7 +2,7 @@
 
 # Supporting data and code for: Insecticide resistance and fitness cost in *Bemisia tabaci* (Hemiptera: Aleyrodidae) invasive and resident species in La Réunion Island
 
-*The data and R code used for the related study. This study is a part of the phD thesis of Alizée Taquet.* 
+*The data and R code used for the related study. This study is a part of the PhD thesis of Alizée Taquet.* 
 
 ![alt_text](https://xuopmw.db.files.1drv.com/y4mmBsydCI6BUdvygvSlPIAmIrPLoghf_x33qWhWKiPlDOKpS-GyyH7aQWgXA0Dou0CgV5fvmV6OTWGJZOvmzMrX_wJCj9ceO__eJCVUoaQi3VyBS45TNtDpb_KI1uVgcardjHfRSi0DRWlZqjnZGXbCMg2BwSc9KgPTX1zW9MTiVrGWXj2fv40nsjKjrGuotKJQK1m7OvYXgYbDdjP_TggQQ?width=1584&height=588&cropmode=none)
 
