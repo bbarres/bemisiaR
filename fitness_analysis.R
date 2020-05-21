@@ -5,7 +5,7 @@
 ##############################################################################/
 
 source("load_bemisia_data.R")
-#building the lifetime reproduction success
+#building the 'lifetime reproduction success' variable
 larvae$lifereprosucc<-larvae$egg_tot*larvae$eggtoadult_surv_rate
 
 
