@@ -8,10 +8,10 @@
 
 
 ## Context
-Whitefly species are among the most difficult pest to control. Some withefly species have an exceptional evolutionary potential that has led to repeated evolution of resistance against most registered insecticides. In La Réunion, an island of the South West Indian Ocean, three whitefly species coexist, two of which are predominant, the indigenous Indian Ocean (IO) and the invasive Middle East Asia Minor 1 (MEAM1) species. Here we assess the resistance level against two insecticides (plenum and supreme, active substance pymetrozine and acetamipride, respectively) of these two species with very different evolutionnary trajectories. We also investigated the effect of resistance to acetamiprid on life history traits related to fitness in the MEAM1 species. This repository describe the datasets used in the study as well as the R scripts necessary for the statistical analyses. 
+Whitefly species are among the most difficult pest to control. Some withefly species have an exceptional evolutionary potential that has led to repeated evolution of resistance against most registered insecticides. In La Réunion, an island of the South West Indian Ocean, three whitefly species coexist, two of which are predominant, the indigenous Indian Ocean (IO) and the invasive Middle East Asia Minor 1 (MEAM1) species. Here we assess the resistance level against two insecticides (plenum and supreme, active substance pymetrozine and acetamipride, respectively) of these two species with very different evolutionnary trajectories. We also investigated the effect of resistance to acetamiprid on life history traits related to fitness in the MEAM1 species. This repository describe the data sets used in the study as well as the R scripts necessary for the statistical analyses. 
 
 ## Datasets
-The datasets used in the study can be found in the "dataset" folder. 
+The data sets used in the study can be found in the "dataset" folder. 
 
 The first dataset contains the results of the dose-response experiments. Each line depict the results for one population of one species at one concentration of one pesticide. 
 + insecticides-mortality.txt
@@ -57,7 +57,7 @@ Alizée Taquet wrote the first draft of **bioassays_drcanalysis.R** script with 
 
 
 ## Citation
-You can cite cite the related study as follow: 
+You can cite the related study as follow: 
 + Taquet A., Delatte H., Barrès B., Simiand C., Grondin M. and Jourdan-Pineau H. [Insecticide resistance and fitness cost in *Bemisia tabaci* (Hemiptera: Aleyrodidae) invasive and resident species in La Réunion Island. *Pest Management Science*,76:1235-1244, 2020. doi:10.1002/ps.5633.](https://onlinelibrary.wiley.com/doi/abs/10.1002/ps.5633)
 
 If you want to use (some of) the code found on this page or if you want to cite this repository: 
